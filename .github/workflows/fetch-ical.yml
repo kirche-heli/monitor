@@ -1,0 +1,45 @@
+name: iCal Feed aktualisieren
+
+on:
+  schedule:
+    # Jede Stunde aktualisieren
+    - cron: '0 * * * *'
+  # Auch manuell auslösbar
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: ChurchDesk iCal-Feed herunterladen
+        run: |
+          curl -sL \
+            --max-time 15 \
+            --user-agent "Mozilla/5.0 (compatible; KircheHeli-Monitor/1.0)" \
+            "https://api2.churchdesk.com/ical/parish/67323?organizationId=5801" \
+            -o kalender.ics
+          
+          # Prüfen ob gültiges iCal
+          if grep -q "BEGIN:VCALENDAR" kalender.ics; then
+            echo "✅ iCal erfolgreich geladen"
+            wc -l kalender.ics
+          else
+            echo "❌ Kein gültiges iCal erhalten"
+            cat kalender.ics
+            exit 1
+          fi
+
+      - name: Änderungen committen
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add kalender.ics
+          # Nur committen wenn sich etwas geändert hat
+          git diff --staged --quiet || git commit -m "iCal aktualisiert: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
