@@ -1,0 +1,1424 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Kooperationsraum Hessisch Lichtenau & Kooperationsraum Am Mei
+ ßner - Hessisch Lichtenau
+PRODID:-//Churchdesk//iCal Feed//EN
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+X-PUBLISHED-TTL:PT15M
+REFRESH-INTERVAL;VALUE=DURATION:PT15M
+BEGIN:VEVENT
+UID:36163922
+DTSTAMP:20250105T201508Z
+DTSTART:20260824T070000Z
+DTEND:20260824T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106264
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163922
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163922
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163923
+DTSTAMP:20250105T201508Z
+DTSTART:20260817T070000Z
+DTEND:20260817T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106263
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163923
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163923
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163924
+DTSTAMP:20250105T201508Z
+DTSTART:20260810T070000Z
+DTEND:20260810T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106262
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163924
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163924
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163925
+DTSTAMP:20250105T201507Z
+DTSTART:20260803T070000Z
+DTEND:20260803T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106261
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163925
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163925
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163926
+DTSTAMP:20250105T201507Z
+DTSTART:20260727T070000Z
+DTEND:20260727T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106260
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163926
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163926
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163927
+DTSTAMP:20250105T201507Z
+DTSTART:20260720T070000Z
+DTEND:20260720T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106259
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163927
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163927
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163928
+DTSTAMP:20250105T201507Z
+DTSTART:20260713T070000Z
+DTEND:20260713T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106258
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163928
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163928
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163929
+DTSTAMP:20250105T201507Z
+DTSTART:20260706T070000Z
+DTEND:20260706T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106257
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163929
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163929
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163930
+DTSTAMP:20250105T201507Z
+DTSTART:20260629T070000Z
+DTEND:20260629T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106256
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163930
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163930
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163931
+DTSTAMP:20250105T201507Z
+DTSTART:20260622T070000Z
+DTEND:20260622T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106255
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163931
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163931
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163932
+DTSTAMP:20250105T201507Z
+DTSTART:20260615T070000Z
+DTEND:20260615T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106254
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163932
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163932
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163933
+DTSTAMP:20250105T201507Z
+DTSTART:20260608T070000Z
+DTEND:20260608T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106253
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163933
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163933
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163934
+DTSTAMP:20250105T201507Z
+DTSTART:20260601T070000Z
+DTEND:20260601T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106252
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163934
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163934
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163935
+DTSTAMP:20250105T201507Z
+DTSTART:20260525T070000Z
+DTEND:20260525T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106251
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163935
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163935
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163936
+DTSTAMP:20250105T201507Z
+DTSTART:20260518T070000Z
+DTEND:20260518T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106250
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163936
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163936
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163937
+DTSTAMP:20250105T201507Z
+DTSTART:20260511T070000Z
+DTEND:20260511T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106249
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163937
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163937
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163938
+DTSTAMP:20250105T201506Z
+DTSTART:20260504T070000Z
+DTEND:20260504T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106248
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163938
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163938
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163939
+DTSTAMP:20250105T201506Z
+DTSTART:20260427T070000Z
+DTEND:20260427T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106247
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163939
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163939
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163940
+DTSTAMP:20250105T201506Z
+DTSTART:20260420T070000Z
+DTEND:20260420T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106246
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163940
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163940
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163941
+DTSTAMP:20250105T201506Z
+DTSTART:20260413T070000Z
+DTEND:20260413T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106245
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163941
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163941
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163943
+DTSTAMP:20250105T201506Z
+DTSTART:20260330T070000Z
+DTEND:20260330T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106243
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163943
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163943
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163944
+DTSTAMP:20250105T201506Z
+DTSTART:20260323T080000Z
+DTEND:20260323T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106242
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163944
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163944
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163945
+DTSTAMP:20250105T201506Z
+DTSTART:20260316T080000Z
+DTEND:20260316T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106241
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163945
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163945
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163946
+DTSTAMP:20250105T201506Z
+DTSTART:20260309T080000Z
+DTEND:20260309T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106240
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163946
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163946
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38119954
+DTSTAMP:20260330T102515Z
+DTSTART:20260412T080000Z
+DTEND:20260412T093000Z
+SUMMARY:Konfirmation mit Abendmahl in Hessisch Lichtenau
+SEQUENCE:95054197
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Konfirmation der Konfirmanden aus der Gruppe von Pfarrerin Anja
+  Peters\n\nAbendmahlsfeier mit Oblaten und Wein (Intinctio)\n\n\n\nMitwirk
+ ender: Pfarrerin Anja Peters\n\nEreignis-URL: https://landing.churchdesk.c
+ om/de/e/38119954
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38119954
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:39542454
+DTSTAMP:20260507T103942Z
+DTSTART:20260715T070000Z
+DTEND:20260717T140000Z
+SUMMARY:Lego-Tage
+SEQUENCE:96055113
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/39542454
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/39542454
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:44765029
+DTSTAMP:20260107T090514Z
+DTSTART:20260325T160000Z
+DTEND:20260325T180000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360149
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765029
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765029
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765030
+DTSTAMP:20260107T090515Z
+DTSTART:20260429T150000Z
+DTEND:20260429T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360154
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765030
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765030
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765033
+DTSTAMP:20260107T090515Z
+DTSTART:20260527T150000Z
+DTEND:20260527T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360155
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765033
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765033
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765035
+DTSTAMP:20260107T090516Z
+DTSTART:20260729T150000Z
+DTEND:20260729T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360157
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765035
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765035
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765036
+DTSTAMP:20260107T090516Z
+DTSTART:20260624T150000Z
+DTEND:20260624T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360158
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765036
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765036
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765859
+DTSTAMP:20260107T090940Z
+DTSTART:20260311T133000Z
+DTEND:20260311T153000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361213
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765859
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765859
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765860
+DTSTAMP:20260107T090940Z
+DTSTART:20260408T123000Z
+DTEND:20260408T143000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361214
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765860
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765860
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765861
+DTSTAMP:20260107T090940Z
+DTSTART:20260513T123000Z
+DTEND:20260513T143000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361211
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765861
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765861
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765862
+DTSTAMP:20260107T090941Z
+DTSTART:20260610T123000Z
+DTEND:20260610T143000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361215
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765862
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765862
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765864
+DTSTAMP:20260107T090941Z
+DTSTART:20260708T123000Z
+DTEND:20260708T143000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361216
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765864
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765864
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:46666075
+DTSTAMP:20260304T075551Z
+DTSTART:20260322T130000Z
+DTEND:20260322T140000Z
+SUMMARY:Gottesdienst zur Einführung von Pfarrer Dominik Teminski
+SEQUENCE:94245374
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Dekan Ralph Beyer\, Pfarrerin Anja Peters\, Kirch
+ envorstände Hessisch Lichtenau und Günsterode\n\nEreignis-URL: https://l
+ anding.churchdesk.com/de/e/46666075
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/46666075
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:46666482
+DTSTAMP:20260304T084147Z
+DTSTART:20260404T080000Z
+DTEND:20260404T090000Z
+SUMMARY:Kindergottesdienst in Hessisch Lichtenau
+SEQUENCE:94247247
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Gemeinsam singen\, lachen\, beten:\n\nGott freut sich\, wenn wi
+ r zusammen sind.\n\nAlle Kinder sind herzlich eingeladen.\n\n\n\nMitwirken
+ der: Lektorin Prisca Kaufhold-Freitag\n\nEreignis-URL: https://landing.chu
+ rchdesk.com/de/e/46666482
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/46666482
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47204700
+DTSTAMP:20260304T074602Z
+DTSTART:20260315T093000Z
+DTEND:20260315T103000Z
+SUMMARY:Gottesdienst in Hessisch Lichtenau
+SEQUENCE:94245070
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
+ nding.churchdesk.com/de/e/47204700
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47204700
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47204929
+DTSTAMP:20260304T075711Z
+DTSTART:20260322T093000Z
+DTEND:20260322T103000Z
+SUMMARY:Tauf-Gottesdienst in Hessisch Lichtenau
+SEQUENCE:94245407
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
+ nding.churchdesk.com/de/e/47204929
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47204929
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47204975
+DTSTAMP:20260304T080216Z
+DTSTART:20260329T083000Z
+DTEND:20260329T093000Z
+SUMMARY:Gottesdienst in Hessisch Lichtenau
+SEQUENCE:94245498
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https:/
+ /landing.churchdesk.com/de/e/47204975
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47204975
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47205146
+DTSTAMP:20260304T081202Z
+DTSTART:20260402T160000Z
+DTEND:20260402T170000Z
+SUMMARY:Abendmahls-Gottesdienst in Hessisch Lichtenau
+SEQUENCE:94245795
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https:/
+ /landing.churchdesk.com/de/e/47205146
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47205146
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47205236
+DTSTAMP:20260304T081508Z
+DTSTART:20260403T083000Z
+DTEND:20260403T093000Z
+SUMMARY:Gottesdienst in Hessisch Lichtenau
+SEQUENCE:94245911
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
+ nding.churchdesk.com/de/e/47205236
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47205236
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47205314
+DTSTAMP:20260304T082358Z
+DTSTART:20260405T083000Z
+DTEND:20260405T093000Z
+SUMMARY:Abendmahls-Gottesdienst in Hessisch Lichtenau
+SEQUENCE:94246152
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https:/
+ /landing.churchdesk.com/de/e/47205314
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47205314
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47205984
+DTSTAMP:20260304T083831Z
+DTSTART:20260406T083000Z
+DTEND:20260406T093000Z
+SUMMARY:Tauf-Gottesdienst in Hessisch Lichtenau
+SEQUENCE:94247041
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
+ nding.churchdesk.com/de/e/47205984
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47205984
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47206397
+DTSTAMP:20260507T060033Z
+DTSTART:20260514T090000Z
+DTEND:20260514T100000Z
+SUMMARY:Himmelfahrtsgottesdienst in Günsterode
+SEQUENCE:96035571
+LOCATION:Schutzhütte Günsterode\, 3212 Melsungen-Günsterode
+DESCRIPTION:Am Donnerstag\, den 14. Mai\, laden wir herzlich ein\, gemeinsa
+ m in unserem Kooperationsraum den Himmelfahrtsgottesdienst an der Schutzh
+ ütte in Günsterode zu feiern.\n\nInmitten der Natur wollen wir um 11:00 
+ Uhr zusammenkommen\, Gott danken\, singen und Gemeinschaft erleben. Musika
+ lisch begleitet wird der Gottesdienst vom Ev. Bläserkreis Hessisch Lichte
+ nau.\n\nIm Anschluss an den Gottesdienst ist Zeit für ein gemütliches Be
+ isammensein. Bei Gegrilltem und kalten Getränken möchten wir noch verwei
+ len\, ins Gespräch kommen und die Gemeinschaft genießen. Unterstützt we
+ rden wir dabei dankenswerterweise von der Freiwilligen Feuerwehr Günstero
+ de.\n\nOb jung oder alt\, allein oder mit Familie: Alle sind herzlich will
+ kommen.\n\nBringen Sie gern gute Laune\, Hunger und Freude an Gemeinschaft
+  mit. Wir freuen uns auf einen schönen Himmelfahrtstag miteinander.\n\n\n
+ \n\n\nMitwirkender: Pfarrer Dominik Teminski und Ev. Bläserkreis Hessisch
+  Lichtenau\n\nEreignis-URL: https://landing.churchdesk.com/de/e/47206397
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47206397
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47746454
+DTSTAMP:20260330T102459Z
+DTSTART:20260419T080000Z
+DTEND:20260419T093000Z
+SUMMARY:Konfirmation mit Abendmahl in Hessisch Lichtenau
+SEQUENCE:95054193
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Konfirmation der Konfirmanden aus der Gruppe von Pfarrer Domini
+ k Teminski\n\nAbendmahlsfeier mit Oblaten und Wein (Intinctio)\n\n\n\nMitw
+ irkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https://landing.church
+ desk.com/de/e/47746454
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47746454
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:47746571
+DTSTAMP:20260330T103301Z
+DTSTART:20260426T083000Z
+DTEND:20260426T093000Z
+SUMMARY:Gottesdienst in Hessisch Lichtenau
+SEQUENCE:95054457
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
+ nding.churchdesk.com/de/e/47746571
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/47746571
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:48450216
+DTSTAMP:20260423T122849Z
+DTSTART:20260503T083000Z
+DTEND:20260503T093000Z
+SUMMARY:Gottesdienst in Hessisch Lichtenau
+SEQUENCE:95668201
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrerin Dagmar Ried-Dickel\n\nEreignis-URL: htt
+ ps://landing.churchdesk.com/de/e/48450216
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/48450216
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:36163912
+DTSTAMP:20250105T201508Z
+DTSTART:20261102T080000Z
+DTEND:20261102T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106274
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163912
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163912
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163913
+DTSTAMP:20250105T201508Z
+DTSTART:20261026T080000Z
+DTEND:20261026T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106273
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163913
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163913
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163914
+DTSTAMP:20250105T201508Z
+DTSTART:20261019T070000Z
+DTEND:20261019T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106272
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163914
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163914
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163915
+DTSTAMP:20250105T201508Z
+DTSTART:20261012T070000Z
+DTEND:20261012T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106271
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163915
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163915
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163916
+DTSTAMP:20250105T201508Z
+DTSTART:20260928T070000Z
+DTEND:20260928T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106269
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163916
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163916
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163917
+DTSTAMP:20250105T201508Z
+DTSTART:20261005T070000Z
+DTEND:20261005T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106270
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163917
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163917
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163918
+DTSTAMP:20250105T201508Z
+DTSTART:20260921T070000Z
+DTEND:20260921T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106268
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163918
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163918
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163919
+DTSTAMP:20250105T201508Z
+DTSTART:20260914T070000Z
+DTEND:20260914T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106267
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163919
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163919
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163920
+DTSTAMP:20250105T201508Z
+DTSTART:20260907T070000Z
+DTEND:20260907T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106266
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163920
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163920
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163921
+DTSTAMP:20250105T201508Z
+DTSTART:20260831T070000Z
+DTEND:20260831T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106265
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163921
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163921
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36184616
+DTSTAMP:20250105T201508Z
+DTSTART:20261109T080000Z
+DTEND:20261109T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106275
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36184616
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36184616
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36326533
+DTSTAMP:20250105T201508Z
+DTSTART:20261116T080000Z
+DTEND:20261116T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106276
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36326533
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36326533
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36437690
+DTSTAMP:20250105T201508Z
+DTSTART:20261123T080000Z
+DTEND:20261123T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106277
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36437690
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36437690
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36535503
+DTSTAMP:20250105T201509Z
+DTSTART:20261130T080000Z
+DTEND:20261130T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106278
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36535503
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36535503
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36626737
+DTSTAMP:20250105T201509Z
+DTSTART:20261207T080000Z
+DTEND:20261207T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106279
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36626737
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36626737
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36716924
+DTSTAMP:20250105T201509Z
+DTSTART:20261214T080000Z
+DTEND:20261214T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106280
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36716924
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36716924
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36805052
+DTSTAMP:20250105T201509Z
+DTSTART:20261221T080000Z
+DTEND:20261221T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106281
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36805052
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36805052
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36846349
+DTSTAMP:20250105T201509Z
+DTSTART:20261228T080000Z
+DTEND:20261228T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106282
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36846349
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36846349
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36902599
+DTSTAMP:20250105T201509Z
+DTSTART:20270104T080000Z
+DTEND:20270104T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106283
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36902599
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36902599
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:37041947
+DTSTAMP:20250111T150201Z
+DTSTART:20270111T080000Z
+DTEND:20270111T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83321338
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37041947
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/37041947
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:37173363
+DTSTAMP:20250118T150146Z
+DTSTART:20270118T080000Z
+DTEND:20270118T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83528921
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37173363
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/37173363
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:37293001
+DTSTAMP:20250125T150158Z
+DTSTART:20270125T080000Z
+DTEND:20270125T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83748304
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37293001
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/37293001
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:37431779
+DTSTAMP:20250201T150154Z
+DTSTART:20270201T080000Z
+DTEND:20270201T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:83976388
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37431779
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/37431779
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:37564929
+DTSTAMP:20250208T150155Z
+DTSTART:20270208T080000Z
+DTEND:20270208T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:84158377
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37564929
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/37564929
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:37732438
+DTSTAMP:20250215T150318Z
+DTSTART:20270215T080000Z
+DTEND:20270215T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:84345697
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37732438
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/37732438
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:37888321
+DTSTAMP:20250222T150329Z
+DTSTART:20270222T080000Z
+DTEND:20270222T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:84523481
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37888321
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/37888321
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38039731
+DTSTAMP:20250301T150327Z
+DTSTART:20270301T080000Z
+DTEND:20270301T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:84699644
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38039731
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38039731
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38189801
+DTSTAMP:20250308T150340Z
+DTSTART:20270308T080000Z
+DTEND:20270308T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:84862200
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38189801
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38189801
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38307128
+DTSTAMP:20250315T150328Z
+DTSTART:20270315T080000Z
+DTEND:20270315T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:85032007
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38307128
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38307128
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38435896
+DTSTAMP:20250322T150322Z
+DTSTART:20270322T080000Z
+DTEND:20270322T090000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:85226575
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38435896
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38435896
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38598907
+DTSTAMP:20250329T150348Z
+DTSTART:20270329T070000Z
+DTEND:20270329T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:85403059
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38598907
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38598907
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38712228
+DTSTAMP:20250405T140333Z
+DTSTART:20270405T070000Z
+DTEND:20270405T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:85578827
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38712228
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38712228
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38797428
+DTSTAMP:20250412T140337Z
+DTSTART:20270412T070000Z
+DTEND:20270412T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:85739390
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38797428
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38797428
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38856527
+DTSTAMP:20250419T140335Z
+DTSTART:20270419T070000Z
+DTEND:20270419T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:85838404
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38856527
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38856527
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:38929817
+DTSTAMP:20250426T140337Z
+DTSTART:20270426T070000Z
+DTEND:20270426T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:85956773
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38929817
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/38929817
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:39017350
+DTSTAMP:20250503T140411Z
+DTSTART:20270503T070000Z
+DTEND:20270503T080000Z
+SUMMARY:Krabbelgruppe
+SEQUENCE:86087278
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/39017350
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/39017350
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:44765034
+DTSTAMP:20260107T090516Z
+DTSTART:20260826T150000Z
+DTEND:20260826T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360156
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765034
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765034
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765037
+DTSTAMP:20260107T090516Z
+DTSTART:20260930T150000Z
+DTEND:20260930T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360159
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765037
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765037
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765038
+DTSTAMP:20260107T090516Z
+DTSTART:20261028T160000Z
+DTEND:20261028T180000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360160
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765038
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765038
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765039
+DTSTAMP:20260107T090516Z
+DTSTART:20261125T160000Z
+DTEND:20261125T180000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360161
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765039
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765039
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765040
+DTSTAMP:20260107T090517Z
+DTSTART:20270224T160000Z
+DTEND:20270224T180000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360162
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765040
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765040
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765041
+DTSTAMP:20260107T090517Z
+DTSTART:20261230T160000Z
+DTEND:20261230T180000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360163
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765041
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765041
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765042
+DTSTAMP:20260107T090517Z
+DTSTART:20270127T160000Z
+DTEND:20270127T180000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360164
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765042
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765042
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765043
+DTSTAMP:20260107T090517Z
+DTSTART:20270331T150000Z
+DTEND:20270331T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360165
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765043
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765043
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765044
+DTSTAMP:20260107T090517Z
+DTSTART:20270428T150000Z
+DTEND:20270428T170000Z
+SUMMARY:Spiele-Abend
+SEQUENCE:92360166
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765044
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765044
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765865
+DTSTAMP:20260107T090941Z
+DTSTART:20260909T123000Z
+DTEND:20260909T143000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361217
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765865
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765865
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765866
+DTSTAMP:20260107T090941Z
+DTSTART:20261111T133000Z
+DTEND:20261111T153000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361220
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765866
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765866
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765867
+DTSTAMP:20260107T090941Z
+DTSTART:20261014T123000Z
+DTEND:20261014T143000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361219
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765867
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765867
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765869
+DTSTAMP:20260107T090942Z
+DTSTART:20270113T133000Z
+DTEND:20270113T153000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361222
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765869
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765869
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765870
+DTSTAMP:20260107T090942Z
+DTSTART:20261209T133000Z
+DTEND:20261209T153000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361221
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765870
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765870
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765871
+DTSTAMP:20260107T090942Z
+DTSTART:20270210T133000Z
+DTEND:20270210T153000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361223
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765871
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765871
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765872
+DTSTAMP:20260107T090942Z
+DTSTART:20270310T133000Z
+DTEND:20270310T153000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361225
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765872
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765872
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:44765873
+DTSTAMP:20260107T090942Z
+DTSTART:20270414T123000Z
+DTEND:20270414T143000Z
+SUMMARY:Seniorennachmittag
+SEQUENCE:92361226
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765873
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765873
+STATUS:CONFIRMED
+CATEGORIES:Senioren
+END:VEVENT
+END:VCALENDAR
