@@ -74,6 +74,58 @@ body{
 .deco{position:fixed;pointer-events:none;z-index:4;}
 .deco-tl{top:0;left:0;width:clamp(170px,19vw,295px);opacity:0.65;}
 .deco-br{bottom:0;right:0;width:clamp(90px,10vw,155px);opacity:0.5;}
+
+
+
+
+
+/* Trennlinie (die vertikale grüne Linie neben dem Datum) */
+#godiWidget [class*="border"],
+#godiWidget [class*="Border"],
+#godiWidget [class*="divider"],
+#godiWidget [class*="Divider"] {
+  border-color: #3a5225 !important;
+  opacity: 0.4 !important;
+  background: transparent !important;
+}
+
+/* ── Gottesdienst (eigenes Rendering) ── */
+.sec-godi { padding:2.2vh 0; flex-shrink:0; }
+.godi-wrap { display:flex; align-items:flex-start; gap:1.2vw; margin-top:0.5vh; }
+.godi-datebox {
+  flex-shrink:0;
+  display:flex; flex-direction:column; align-items:center;
+  min-width: clamp(32px,3.2vw,48px);
+}
+.godi-monat {
+  font-size:clamp(8px,0.82vw,12px); font-weight:700; color:#3a5225;
+  letter-spacing:1.5px; text-transform:uppercase; line-height:1;
+}
+.godi-tag {
+  font-size:clamp(22px,2.6vw,40px); font-weight:300; color:#2a2a2a;
+  line-height:1; margin-top:0.1vh;
+}
+.godi-vline {
+  width:1.5px; align-self:stretch; margin:2px 0;
+  background:linear-gradient(to bottom, #3a5225, rgba(58,82,37,0.2));
+  flex-shrink:0; opacity:0.5;
+}
+.godi-info { flex:1; min-width:0; }
+.godi-title {
+  font-size:clamp(12px,1.25vw,19px); font-weight:600; color:#2a2a2a;
+  line-height:1.3; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.godi-zeit {
+  font-size:clamp(11px,1.1vw,16px); font-weight:300; color:#3a5225;
+  margin-top:0.25vh;
+}
+.godi-ort {
+  font-size:clamp(10px,1vw,14px); font-weight:300; color:#888;
+  margin-top:0.2vh; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.godi-placeholder {
+  font-size:clamp(11px,1.1vw,16px); color:#bbb; font-weight:300;
+}
 </style>
 </head>
 <body>
@@ -141,6 +193,15 @@ body{
 
     <div class="hr"></div>
 
+    <div class="sec-godi">
+      <span class="lbl">Nächster Gottesdienst</span>
+      <div id="godiContent">
+        <span class="godi-placeholder">Wird geladen…</span>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
     <div class="sec-buero">
       <span class="lbl">Gemeindebüro</span>
       <div class="buero-row">
@@ -175,132 +236,338 @@ body{
 </div>
 
 <script>
-// Auto-fit WILLKOMMEN
-function fitW(){var e=document.getElementById('ww'),m=e.parentElement.clientWidth*0.92;e.style.fontSize='';var f=parseFloat(getComputedStyle(e).fontSize);for(var i=0;i<20;i++){if(e.scrollWidth<=m)break;f*=0.93;e.style.fontSize=f+'px';}}
-window.addEventListener('load',fitW);window.addEventListener('resize',fitW);
-
-// Uhr
-var DAYS=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
-var MON=['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
-function p2(v){return String(v).padStart(2,'0');}
-function tick(){
-  var n=new Date(),h=n.getHours(),m=n.getMinutes(),s=n.getSeconds();
-  document.getElementById('tD').textContent=p2(h)+':'+p2(m);
-  document.getElementById('tS').textContent=DAYS[n.getDay()]+', '+n.getDate()+'. '+MON[n.getMonth()]+' '+n.getFullYear();
-  var ma=(m+s/60)*6-90,ha=((h%12)+(m+s/60)/60)*30-90;
-  function pt(a,r){return[40+r*Math.cos(a*Math.PI/180),40+r*Math.sin(a*Math.PI/180)];}
-  var mp=pt(ma,24),hp=pt(ha,16);
-  document.getElementById('mH').setAttribute('x2',mp[0].toFixed(2));document.getElementById('mH').setAttribute('y2',mp[1].toFixed(2));
-  document.getElementById('hH').setAttribute('x2',hp[0].toFixed(2));document.getElementById('hH').setAttribute('y2',hp[1].toFixed(2));
+// ── Auto-fit WILLKOMMEN ──
+function fitW(){
+  var e=document.getElementById('ww');
+  if(!e)return;
+  e.style.fontSize='';
+  var maxW=e.parentElement.clientWidth*0.92;
+  var fs=parseFloat(getComputedStyle(e).fontSize);
+  for(var i=0;i<25;i++){
+    if(e.scrollWidth<=maxW)break;
+    fs*=0.93;
+    e.style.fontSize=fs+'px';
+  }
 }
-tick();setInterval(tick,1000);
+window.addEventListener('load',fitW);
+window.addEventListener('resize',fitW);
 
-// Wetter
-function wSVG(c,s){s=s||80;var h=s/2;function e(cx,cy,rx,ry,f,op){return'<ellipse cx="'+(s*cx).toFixed(1)+'" cy="'+(s*cy).toFixed(1)+'" rx="'+(s*rx).toFixed(1)+'" ry="'+(s*ry).toFixed(1)+'" fill="'+f+'"'+(op?' opacity="'+op+'"':'')+'/>';}function li(x1,y1,x2,y2,col,w){return'<line x1="'+(s*x1).toFixed(1)+'" y1="'+(s*y1).toFixed(1)+'" x2="'+(s*x2).toFixed(1)+'" y2="'+(s*y2).toFixed(1)+'" stroke="'+col+'" stroke-width="'+(s*w).toFixed(1)+'" stroke-linecap="round"/>';}var t='<svg viewBox="0 0 '+s+' '+s+'" xmlns="http://www.w3.org/2000/svg">';if(c===0)return t+'<circle cx="'+h+'" cy="'+h+'" r="'+(s*.27).toFixed(1)+'" fill="#f5c320"/>'+li(.5,.07,.5,.02,'#f5c320',.055)+li(.5,.93,.5,.98,'#f5c320',.055)+li(.07,.5,.02,.5,'#f5c320',.055)+li(.93,.5,.98,.5,'#f5c320',.055)+li(.21,.21,.16,.16,'#f5c320',.055)+li(.79,.79,.84,.84,'#f5c320',.055)+li(.79,.21,.84,.16,'#f5c320',.055)+li(.21,.79,.16,.84,'#f5c320',.055)+'</svg>';if(c===1||c===2)return t+'<circle cx="'+(s*.38).toFixed(1)+'" cy="'+(s*.35).toFixed(1)+'" r="'+(s*.21).toFixed(1)+'" fill="#f5c320"/>'+li(.38,.07,.38,.02,'#f5c320',.04)+li(.1,.35,.05,.35,'#f5c320',.04)+li(.19,.14,.14,.1,'#f5c320',.04)+li(.59,.14,.63,.1,'#f5c320',.04)+e(.63,.65,.24,.15,'#c8d8de')+e(.46,.7,.19,.13,'#d5e3e8')+e(.7,.71,.17,.11,'#cdd9e0')+e(.56,.75,.31,.12,'#c5d5dc')+e(.37,.73,.15,.1,'#d8e5ea')+'</svg>';if(c===3)return t+e(.52,.37,.28,.17,'#aabac2')+e(.36,.45,.22,.16,'#bccbd3')+e(.66,.47,.19,.14,'#b4c4cc')+e(.5,.53,.37,.15,'#b0c2cc')+'</svg>';if((c>=51&&c<=67)||(c>=80&&c<=82))return t+e(.52,.33,.27,.16,'#9aaab2')+e(.36,.4,.21,.14,'#aabac2')+e(.65,.42,.18,.13,'#a2b2ba')+e(.5,.48,.35,.13,'#96a8b2')+li(.3,.67,.24,.8,'#5888b8',.05)+li(.45,.65,.39,.78,'#5888b8',.05)+li(.6,.66,.54,.79,'#5888b8',.05)+li(.72,.64,.66,.77,'#5888b8',.05)+'</svg>';if(c>=71&&c<=77)return t+e(.52,.35,.27,.16,'#c0d2e2')+e(.36,.42,.2,.14,'#ccdde8')+e(.65,.44,.18,.13,'#c4d8e4')+e(.5,.5,.35,.13,'#bcd0e0')+'<circle cx="'+(s*.3).toFixed(1)+'" cy="'+(s*.71).toFixed(1)+'" r="'+(s*.04).toFixed(1)+'" fill="#88aad0"/><circle cx="'+(s*.46).toFixed(1)+'" cy="'+(s*.75).toFixed(1)+'" r="'+(s*.035).toFixed(1)+'" fill="#88aad0"/></svg>';if(c>=95)return t+e(.52,.31,.27,.16,'#787878')+e(.36,.38,.21,.14,'#888')+e(.5,.46,.35,.13,'#7a7a7a')+'<polygon points="'+(s*.5)+','+(s*.55)+' '+(s*.41)+','+(s*.72)+' '+(s*.49)+','+(s*.69)+' '+(s*.44)+','+(s*.87)+' '+(s*.61)+','+(s*.66)+' '+(s*.51)+','+(s*.69)+'" fill="#f5c320"/></svg>';return t+e(.52,.4,.27,.17,'#aabac2')+e(.37,.47,.21,.15,'#bac8d0')+e(.65,.49,.18,.13,'#b2c2ca')+e(.5,.55,.35,.14,'#b0c0ca')+'</svg>';}
-function wDesc(c){if(c===0)return'Sonnig';if(c===1)return'Meist sonnig';if(c===2)return'Teilweise bewölkt';if(c===3)return'Bedeckt';if(c>=45&&c<=48)return'Nebelig';if(c>=51&&c<=55)return'Nieselregen';if(c>=61&&c<=67)return'Regen';if(c>=71&&c<=77)return'Schneefall';if(c>=80&&c<=82)return'Regenschauer';if(c>=95)return'Gewitter';return'Bewölkt';}
+// ── Uhr ──
+var DAYS=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+var MON=['Januar','Februar','M\u00e4rz','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+function p2(v){return String(v).padStart(2,'0');}
 
-function setStatus(on){var d=document.getElementById('lD'),t=document.getElementById('lT');d.style.background=on?'#22c55e':'#ef4444';d.style.boxShadow=on?'0 0 6px rgba(34,197,94,0.7)':'0 0 6px rgba(239,68,68,0.7)';t.textContent=on?'Live':'Offline';}
-window.addEventListener('online',function(){setStatus(true);loadWeather();});
-window.addEventListener('offline',function(){setStatus(false);});
+function tick(){
+  var n=new Date();
+  var h=n.getHours(), m=n.getMinutes(), s=n.getSeconds();
+  document.getElementById('tD').textContent = p2(h)+':'+p2(m);
+  document.getElementById('tS').textContent = DAYS[n.getDay()]+', '+n.getDate()+'. '+MON[n.getMonth()]+' '+n.getFullYear();
+  var ma=(m+s/60)*6-90;
+  var ha=((h%12)+(m+s/60)/60)*30-90;
+  function pt(a,r){return[40+r*Math.cos(a*Math.PI/180), 40+r*Math.sin(a*Math.PI/180)];}
+  var mp=pt(ma,24), hp=pt(ha,16);
+  document.getElementById('mH').setAttribute('x2',mp[0].toFixed(2));
+  document.getElementById('mH').setAttribute('y2',mp[1].toFixed(2));
+  document.getElementById('hH').setAttribute('x2',hp[0].toFixed(2));
+  document.getElementById('hH').setAttribute('y2',hp[1].toFixed(2));
+}
+tick();
+setInterval(tick,1000);
+
+// ── Online-Status ──
+function setStatus(on){
+  var d=document.getElementById('lD'), t=document.getElementById('lT');
+  d.style.background   = on ? '#22c55e' : '#ef4444';
+  d.style.boxShadow    = on ? '0 0 6px rgba(34,197,94,0.7)' : '0 0 6px rgba(239,68,68,0.7)';
+  t.textContent        = on ? 'Live' : 'Offline';
+}
+window.addEventListener('online',  function(){ setStatus(true);  loadWeather(); loadGodi(); });
+window.addEventListener('offline', function(){ setStatus(false); });
 setStatus(navigator.onLine);
 
-function loadWeather(){fetch('https://api.open-meteo.com/v1/forecast?latitude=51.20&longitude=9.7167&current=temperature_2m,weather_code&timezone=Europe%2FBerlin').then(function(r){return r.json();}).then(function(d){setStatus(true);var c=d.current;document.getElementById('wT').textContent=Math.round(c.temperature_2m);document.getElementById('wD').textContent=wDesc(c.weather_code);document.getElementById('wI').innerHTML=wSVG(c.weather_code,80);}).catch(function(){setStatus(false);});}
-loadWeather();setInterval(loadWeather,30*60*1000);
+// ── Wetter-SVGs ──
+function wSVG(c,s){
+  s=s||80; var h=s/2;
+  function e(cx,cy,rx,ry,f,op){
+    return '<ellipse cx="'+(s*cx).toFixed(1)+'" cy="'+(s*cy).toFixed(1)+'" rx="'+(s*rx).toFixed(1)+'" ry="'+(s*ry).toFixed(1)+'" fill="'+f+'"'+(op?' opacity="'+op+'"':'')+'/>';
+  }
+  function li(x1,y1,x2,y2,col,w){
+    return '<line x1="'+(s*x1).toFixed(1)+'" y1="'+(s*y1).toFixed(1)+'" x2="'+(s*x2).toFixed(1)+'" y2="'+(s*y2).toFixed(1)+'" stroke="'+col+'" stroke-width="'+(s*w).toFixed(1)+'" stroke-linecap="round"/>';
+  }
+  var t='<svg viewBox="0 0 '+s+' '+s+'" xmlns="http://www.w3.org/2000/svg">';
+  if(c===0) return t+'<circle cx="'+h+'" cy="'+h+'" r="'+(s*.27).toFixed(1)+'" fill="#f5c320"/>'+li(.5,.07,.5,.02,'#f5c320',.055)+li(.5,.93,.5,.98,'#f5c320',.055)+li(.07,.5,.02,.5,'#f5c320',.055)+li(.93,.5,.98,.5,'#f5c320',.055)+li(.21,.21,.16,.16,'#f5c320',.055)+li(.79,.79,.84,.84,'#f5c320',.055)+li(.79,.21,.84,.16,'#f5c320',.055)+li(.21,.79,.16,.84,'#f5c320',.055)+'</svg>';
+  if(c===1||c===2) return t+'<circle cx="'+(s*.38).toFixed(1)+'" cy="'+(s*.35).toFixed(1)+'" r="'+(s*.21).toFixed(1)+'" fill="#f5c320"/>'+li(.38,.07,.38,.02,'#f5c320',.04)+li(.1,.35,.05,.35,'#f5c320',.04)+li(.19,.14,.14,.1,'#f5c320',.04)+li(.59,.14,.63,.1,'#f5c320',.04)+e(.63,.65,.24,.15,'#c8d8de')+e(.46,.7,.19,.13,'#d5e3e8')+e(.7,.71,.17,.11,'#cdd9e0')+e(.56,.75,.31,.12,'#c5d5dc')+e(.37,.73,.15,.1,'#d8e5ea')+'</svg>';
+  if(c===3) return t+e(.52,.37,.28,.17,'#aabac2')+e(.36,.45,.22,.16,'#bccbd3')+e(.66,.47,.19,.14,'#b4c4cc')+e(.5,.53,.37,.15,'#b0c2cc')+'</svg>';
+  if((c>=51&&c<=67)||(c>=80&&c<=82)) return t+e(.52,.33,.27,.16,'#9aaab2')+e(.36,.4,.21,.14,'#aabac2')+e(.65,.42,.18,.13,'#a2b2ba')+e(.5,.48,.35,.13,'#96a8b2')+li(.3,.67,.24,.8,'#5888b8',.05)+li(.45,.65,.39,.78,'#5888b8',.05)+li(.6,.66,.54,.79,'#5888b8',.05)+li(.72,.64,.66,.77,'#5888b8',.05)+'</svg>';
+  if(c>=71&&c<=77) return t+e(.52,.35,.27,.16,'#c0d2e2')+e(.36,.42,.2,.14,'#ccdde8')+e(.65,.44,.18,.13,'#c4d8e4')+e(.5,.5,.35,.13,'#bcd0e0')+'<circle cx="'+(s*.3).toFixed(1)+'" cy="'+(s*.71).toFixed(1)+'" r="'+(s*.04).toFixed(1)+'" fill="#88aad0"/><circle cx="'+(s*.46).toFixed(1)+'" cy="'+(s*.75).toFixed(1)+'" r="'+(s*.035).toFixed(1)+'" fill="#88aad0"/></svg>';
+  if(c>=95) return t+e(.52,.31,.27,.16,'#787878')+e(.36,.38,.21,.14,'#888')+e(.5,.46,.35,.13,'#7a7a7a')+'<polygon points="'+(s*.5)+','+(s*.55)+' '+(s*.41)+','+(s*.72)+' '+(s*.49)+','+(s*.69)+' '+(s*.44)+','+(s*.87)+' '+(s*.61)+','+(s*.66)+' '+(s*.51)+','+(s*.69)+'" fill="#f5c320"/></svg>';
+  return t+e(.52,.4,.27,.17,'#aabac2')+e(.37,.47,.21,.15,'#bac8d0')+e(.65,.49,.18,.13,'#b2c2ca')+e(.5,.55,.35,.14,'#b0c0ca')+'</svg>';
+}
+function wDesc(c){
+  if(c===0)return'Sonnig'; if(c===1)return'Meist sonnig'; if(c===2)return'Teilweise bew\u00f6lkt';
+  if(c===3)return'Bedeckt'; if(c>=45&&c<=48)return'Nebelig'; if(c>=51&&c<=55)return'Nieselregen';
+  if(c>=61&&c<=67)return'Regen'; if(c>=71&&c<=77)return'Schneefall';
+  if(c>=80&&c<=82)return'Regenschauer'; if(c>=95)return'Gewitter'; return'Bew\u00f6lkt';
+}
+function loadWeather(){
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=51.20&longitude=9.7167&current=temperature_2m,weather_code&timezone=Europe%2FBerlin')
+  .then(function(r){return r.json();})
+  .then(function(d){
+    setStatus(true);
+    var c=d.current;
+    document.getElementById('wT').textContent = Math.round(c.temperature_2m);
+    document.getElementById('wD').textContent = wDesc(c.weather_code);
+    document.getElementById('wI').innerHTML   = wSVG(c.weather_code, 80);
+  })
+  .catch(function(){ setStatus(false); });
+}
+loadWeather();
+setInterval(loadWeather, 30*60*1000);
 
-
-// Wochensprüche EKD-Kalender 2025/2026 – alle Sonntage und Feste
-// Format: "YYYY-MM-DD": { s: "Sonntagsname", t: "Spruchtext", r: "Referenz" }
+// ── Wochensprüche EKD-Kalender 2025/2026 ──
 var SPRUECHE = {
-  "2025-11-30": { s:"1. Advent",          t:"Siehe, dein König kommt zu dir, ein Gerechter und ein Helfer.", r:"Sacharja 9,9b" },
-  "2025-12-07": { s:"2. Advent",          t:"Seht auf und erhebt eure Häupter, weil sich eure Erlösung naht.", r:"Lukas 21,28" },
-  "2025-12-14": { s:"3. Advent",          t:"Bereitet dem Herrn den Weg; denn siehe, der Herr kommt gewaltig.", r:"Jesaja 40,3.10" },
-  "2025-12-21": { s:"4. Advent",          t:"Freuet euch in dem Herrn allewege, und abermals sage ich: Freuet euch! Der Herr ist nahe!", r:"Philipper 4,4.5b" },
-  "2025-12-24": { s:"Heiligabend",        t:"Fürchtet euch nicht! Siehe, ich verkündige euch große Freude, die allem Volk widerfahren wird; denn euch ist heute der Heiland geboren, welcher ist Christus, der Herr, in der Stadt Davids.", r:"Lukas 2,10b.11" },
-  "2025-12-25": { s:"Christfest I",       t:"Das Wort ward Fleisch und wohnte unter uns, und wir sahen seine Herrlichkeit.", r:"Johannes 1,14a" },
-  "2025-12-26": { s:"Christfest II",      t:"Das Wort ward Fleisch und wohnte unter uns, und wir sahen seine Herrlichkeit.", r:"Johannes 1,14a" },
-  "2025-12-28": { s:"1. So. nach Christfest", t:"Wir sahen seine Herrlichkeit, eine Herrlichkeit als des eingeborenen Sohnes vom Vater, voller Gnade und Wahrheit.", r:"Johannes 1,14b" },
-  "2025-12-31": { s:"Altjahrsabend",      t:"Meine Zeit steht in deinen Händen.", r:"Psalm 31,16a" },
-  "2026-01-01": { s:"Neujahrstag",        t:"Jesus Christus gestern und heute und derselbe auch in Ewigkeit.", r:"Hebräer 13,8" },
-  "2026-01-04": { s:"2. So. nach Christfest", t:"Wir sahen seine Herrlichkeit, eine Herrlichkeit als des eingeborenen Sohnes vom Vater, voller Gnade und Wahrheit.", r:"Johannes 1,14b" },
-  "2026-01-06": { s:"Epiphanias",         t:"Die Finsternis vergeht und das wahre Licht scheint schon.", r:"1. Johannes 2,8b" },
-  "2026-01-11": { s:"1. So. nach Epiphanias", t:"Welche der Geist Gottes treibt, die sind Gottes Kinder.", r:"Römer 8,14" },
-  "2026-01-18": { s:"2. So. nach Epiphanias", t:"Von seiner Fülle haben wir alle genommen Gnade um Gnade.", r:"Johannes 1,16" },
-  "2026-01-25": { s:"3. So. nach Epiphanias", t:"Es werden kommen von Osten und von Westen, von Norden und von Süden, die zu Tisch sitzen werden im Reich Gottes.", r:"Lukas 13,29" },
-  "2026-02-01": { s:"Letzter So. nach Epiphanias", t:"Über dir geht auf der Herr, und seine Herrlichkeit erscheint über dir.", r:"Jesaja 60,2b" },
-  "2026-02-08": { s:"Sexagesimä",         t:"Heute, wenn ihr seine Stimme hört, so verstockt eure Herzen nicht.", r:"Hebräer 3,15" },
-  "2026-02-15": { s:"Estomihi",           t:"Seht, wir gehen hinauf nach Jerusalem, und es wird alles vollendet werden, was geschrieben ist durch die Propheten von dem Menschensohn.", r:"Lukas 18,31" },
-  "2026-02-18": { s:"Aschermittwoch",     t:"Seht, wir gehen hinauf nach Jerusalem, und es wird alles vollendet werden, was geschrieben ist durch die Propheten von dem Menschensohn.", r:"Lukas 18,31" },
-  "2026-02-22": { s:"Invokavit",          t:"Dazu ist erschienen der Sohn Gottes, dass er die Werke des Teufels zerstöre.", r:"1. Johannes 3,8b" },
-  "2026-03-01": { s:"Reminiszere",        t:"Gott erweist seine Liebe zu uns darin, dass Christus für uns gestorben ist, als wir noch Sünder waren.", r:"Römer 5,8" },
-  "2026-03-08": { s:"Okuli",              t:"Wer die Hand an den Pflug legt und sieht zurück, der ist nicht geschickt für das Reich Gottes.", r:"Lukas 9,62" },
-  "2026-03-15": { s:"Lätare",             t:"Wenn das Weizenkorn nicht in die Erde fällt und erstirbt, bleibt es allein; wenn es aber erstirbt, bringt es viel Frucht.", r:"Johannes 12,24" },
-  "2026-03-22": { s:"Judika",             t:"Der Menschensohn ist nicht gekommen, dass er sich dienen lasse, sondern dass er diene und gebe sein Leben als Lösegeld für viele.", r:"Matthäus 20,28" },
-  "2026-03-29": { s:"Palmsonntag",        t:"Der Menschensohn muss erhöht werden, auf dass alle, die an ihn glauben, das ewige Leben haben.", r:"Johannes 3,14b.15" },
-  "2026-04-02": { s:"Gründonnerstag",     t:"Er hat ein Gedächtnis gestiftet seiner Wunder, der gnädige und barmherzige Herr.", r:"Psalm 111,4" },
-  "2026-04-03": { s:"Karfreitag",         t:"Also hat Gott die Welt geliebt, dass er seinen eingeborenen Sohn gab, auf dass alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben.", r:"Johannes 3,16" },
-  "2026-04-05": { s:"Ostersonntag",       t:"Christus spricht: Ich war tot, und siehe, ich bin lebendig von Ewigkeit zu Ewigkeit und habe die Schlüssel des Todes und der Hölle.", r:"Offenbarung 1,18" },
-  "2026-04-06": { s:"Ostermontag",        t:"Christus spricht: Ich war tot, und siehe, ich bin lebendig von Ewigkeit zu Ewigkeit und habe die Schlüssel des Todes und der Hölle.", r:"Offenbarung 1,18" },
-  "2026-04-12": { s:"Quasimodogeniti",    t:"Gelobt sei Gott, der Vater unseres Herrn Jesus Christus, der uns nach seiner großen Barmherzigkeit wiedergeboren hat zu einer lebendigen Hoffnung durch die Auferstehung Jesu Christi von den Toten.", r:"1. Petrus 1,3" },
-  "2026-04-19": { s:"Miserikordias Domini", t:"Christus spricht: Ich bin der gute Hirte. Meine Schafe hören meine Stimme, und ich kenne sie und sie folgen mir; und ich gebe ihnen das ewige Leben.", r:"Johannes 10,11a.27-28a" },
-  "2026-04-26": { s:"Jubilate",           t:"Ist jemand in Christus, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, Neues ist geworden.", r:"2. Korinther 5,17" },
-  "2026-05-03": { s:"Kantate",            t:"Singet dem Herrn ein neues Lied, denn er tut Wunder.", r:"Psalm 98,1" },
-  "2026-05-10": { s:"Rogate",             t:"Gelobt sei Gott, der mein Gebet nicht verwirft noch seine Güte von mir wendet.", r:"Psalm 66,20" },
-  "2026-05-14": { s:"Christi Himmelfahrt", t:"Christus spricht: Wenn ich erhöht werde von der Erde, so will ich alle zu mir ziehen.", r:"Johannes 12,32" },
-  "2026-05-17": { s:"Exaudi",             t:"Christus spricht: Wenn ich erhöht werde von der Erde, so will ich alle zu mir ziehen.", r:"Johannes 12,32" },
-  "2026-05-24": { s:"Pfingstsonntag",     t:"Es soll nicht durch Heer oder Kraft, sondern durch meinen Geist geschehen, spricht der Herr Zebaoth.", r:"Sacharja 4,6b" },
-  "2026-05-25": { s:"Pfingstmontag",      t:"Es soll nicht durch Heer oder Kraft, sondern durch meinen Geist geschehen, spricht der Herr Zebaoth.", r:"Sacharja 4,6b" },
-  "2026-05-31": { s:"Trinitatis",         t:"Die Gnade unseres Herrn Jesus Christus und die Liebe Gottes und die Gemeinschaft des Heiligen Geistes sei mit euch allen.", r:"2. Korinther 13,13" },
-  "2026-06-07": { s:"1. So. nach Trinitatis", t:"Wer euch hört, der hört mich; und wer euch verachtet, der verachtet mich.", r:"Lukas 10,16a" },
-  "2026-06-14": { s:"2. So. nach Trinitatis", t:"Kommt her zu mir, alle, die ihr mühselig und beladen seid; ich will euch erquicken.", r:"Matthäus 11,28" },
-  "2026-06-21": { s:"3. So. nach Trinitatis", t:"Der Menschensohn ist gekommen, zu suchen und selig zu machen, was verloren ist.", r:"Lukas 19,10" },
-  "2026-06-28": { s:"4. So. nach Trinitatis", t:"Einer trage des andern Last, so werdet ihr das Gesetz Christi erfüllen.", r:"Galater 6,2" },
-  "2026-07-05": { s:"5. So. nach Trinitatis", t:"Aus Gnade seid ihr gerettet durch Glauben, und das nicht aus euch: Gottes Gabe ist es.", r:"Epheser 2,8" },
-  "2026-07-12": { s:"6. So. nach Trinitatis", t:"So spricht der Herr: Fürchte dich nicht, denn ich habe dich erlöst; ich habe dich bei deinem Namen gerufen; du bist mein!", r:"Jesaja 43,1" },
-  "2026-07-19": { s:"7. So. nach Trinitatis", t:"So seid ihr nun nicht mehr Gäste und Fremdlinge, sondern Mitbürger der Heiligen und Gottes Hausgenossen.", r:"Epheser 2,19" },
-  "2026-07-26": { s:"8. So. nach Trinitatis", t:"Wandelt als Kinder des Lichts; die Frucht des Lichts ist lauter Güte und Gerechtigkeit und Wahrheit.", r:"Epheser 5,8b.9" },
-  "2026-08-02": { s:"9. So. nach Trinitatis", t:"Wem viel gegeben ist, bei dem wird man viel suchen; und wem viel anvertraut ist, von dem wird man umso mehr fordern.", r:"Lukas 12,48b" },
-  "2026-08-09": { s:"10. So. nach Trinitatis (Israelsonntag)", t:"Wohl dem Volk, dessen Gott der Herr ist, dem Volk, das er zum Erbe erwählt hat!", r:"Psalm 33,12" },
-  "2026-08-16": { s:"11. So. nach Trinitatis", t:"Gott widersteht den Hochmütigen, aber den Demütigen gibt er Gnade.", r:"1. Petrus 5,5b" },
-  "2026-08-23": { s:"12. So. nach Trinitatis", t:"Das geknickte Rohr wird er nicht zerbrechen, und den glimmenden Docht wird er nicht auslöschen.", r:"Jesaja 42,3a" },
-  "2026-08-30": { s:"13. So. nach Trinitatis", t:"Christus spricht: Was ihr getan habt einem von diesen meinen geringsten Brüdern, das habt ihr mir getan.", r:"Matthäus 25,40b" },
-  "2026-09-06": { s:"14. So. nach Trinitatis", t:"Lobe den Herrn, meine Seele, und vergiss nicht, was er dir Gutes getan hat.", r:"Psalm 103,2" },
-  "2026-09-13": { s:"15. So. nach Trinitatis", t:"Alle eure Sorge werft auf ihn; denn er sorgt für euch.", r:"1. Petrus 5,7" },
-  "2026-09-20": { s:"16. So. nach Trinitatis", t:"Christus Jesus hat dem Tode die Macht genommen und das Leben und ein unvergängliches Wesen ans Licht gebracht durch das Evangelium.", r:"2. Timotheus 1,10b" },
-  "2026-09-27": { s:"17. So. nach Trinitatis", t:"Unser Glaube ist der Sieg, der die Welt überwunden hat.", r:"1. Johannes 5,4c" },
-  "2026-10-04": { s:"Erntedankfest",      t:"Aller Augen warten auf dich, und du gibst ihnen ihre Speise zur rechten Zeit.", r:"Psalm 145,15" },
-  "2026-10-11": { s:"19. So. nach Trinitatis", t:"Heile du mich, Herr, so werde ich heil; hilf du mir, so ist mir geholfen.", r:"Jeremia 17,14" },
-  "2026-10-18": { s:"20. So. nach Trinitatis", t:"Es ist dir gesagt, Mensch, was gut ist und was der Herr von dir fordert; nichts als Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott.", r:"Micha 6,8" },
-  "2026-10-25": { s:"21. So. nach Trinitatis", t:"Lass dich nicht vom Bösen überwinden, sondern überwinde das Böse mit Gutem.", r:"Römer 12,21" },
-  "2026-11-01": { s:"22. So. nach Trinitatis", t:"Bei dir ist die Vergebung, dass man dich fürchte.", r:"Psalm 130,4" },
-  "2026-11-08": { s:"Drittletzter So. des Kirchenjahres", t:"Selig sind die Frieden stiften; denn sie werden Gottes Kinder heißen.", r:"Matthäus 5,9" },
-  "2026-11-15": { s:"Vorletzter So. des Kirchenjahres", t:"Wir müssen alle offenbar werden vor dem Richterstuhl Christi.", r:"2. Korinther 5,10a" },
-  "2026-11-18": { s:"Buß- und Bettag",    t:"Gerechtigkeit erhöht ein Volk; aber die Sünde ist der Leute Verderben.", r:"Sprüche 14,34" },
-  "2026-11-22": { s:"Ewigkeitssonntag",   t:"Lasst eure Lenden umgürtet sein und eure Lichter brennen.", r:"Lukas 12,35" },
-  "2026-11-29": { s:"1. Advent 2026/27",  t:"Siehe, dein König kommt zu dir, ein Gerechter und ein Helfer.", r:"Sacharja 9,9b" }
+  "2025-11-30":{s:"1. Advent",t:"Siehe, dein K\u00f6nig kommt zu dir, ein Gerechter und ein Helfer.",r:"Sacharja 9,9b"},
+  "2025-12-07":{s:"2. Advent",t:"Seht auf und erhebt eure H\u00e4upter, weil sich eure Erl\u00f6sung naht.",r:"Lukas 21,28"},
+  "2025-12-14":{s:"3. Advent",t:"Bereitet dem Herrn den Weg; denn siehe, der Herr kommt gewaltig.",r:"Jesaja 40,3.10"},
+  "2025-12-21":{s:"4. Advent",t:"Freuet euch in dem Herrn allewege, und abermals sage ich: Freuet euch! Der Herr ist nahe!",r:"Philipper 4,4.5b"},
+  "2025-12-25":{s:"Christfest",t:"Das Wort ward Fleisch und wohnte unter uns, und wir sahen seine Herrlichkeit.",r:"Johannes 1,14a"},
+  "2025-12-28":{s:"1. So. nach Christfest",t:"Wir sahen seine Herrlichkeit, eine Herrlichkeit als des eingeborenen Sohnes vom Vater, voller Gnade und Wahrheit.",r:"Johannes 1,14b"},
+  "2025-12-31":{s:"Altjahrsabend",t:"Meine Zeit steht in deinen H\u00e4nden.",r:"Psalm 31,16a"},
+  "2026-01-01":{s:"Neujahrstag",t:"Jesus Christus gestern und heute und derselbe auch in Ewigkeit.",r:"Hebr\u00e4er 13,8"},
+  "2026-01-06":{s:"Epiphanias",t:"Die Finsternis vergeht und das wahre Licht scheint schon.",r:"1. Johannes 2,8b"},
+  "2026-01-11":{s:"1. So. nach Epiphanias",t:"Welche der Geist Gottes treibt, die sind Gottes Kinder.",r:"R\u00f6mer 8,14"},
+  "2026-01-18":{s:"2. So. nach Epiphanias",t:"Von seiner F\u00fclle haben wir alle genommen Gnade um Gnade.",r:"Johannes 1,16"},
+  "2026-01-25":{s:"3. So. nach Epiphanias",t:"Es werden kommen von Osten und von Westen, von Norden und von S\u00fcden, die zu Tisch sitzen werden im Reich Gottes.",r:"Lukas 13,29"},
+  "2026-02-01":{s:"Letzter So. nach Epiphanias",t:"\u00dcber dir geht auf der Herr, und seine Herrlichkeit erscheint \u00fcber dir.",r:"Jesaja 60,2b"},
+  "2026-02-08":{s:"Sexagesim\u00e4",t:"Heute, wenn ihr seine Stimme h\u00f6rt, so verstockt eure Herzen nicht.",r:"Hebr\u00e4er 3,15"},
+  "2026-02-15":{s:"Estomihi",t:"Seht, wir gehen hinauf nach Jerusalem, und es wird alles vollendet werden, was geschrieben ist durch die Propheten von dem Menschensohn.",r:"Lukas 18,31"},
+  "2026-02-22":{s:"Invokavit",t:"Dazu ist erschienen der Sohn Gottes, dass er die Werke des Teufels zerst\u00f6re.",r:"1. Johannes 3,8b"},
+  "2026-03-01":{s:"Reminiszere",t:"Gott erweist seine Liebe zu uns darin, dass Christus f\u00fcr uns gestorben ist, als wir noch S\u00fcnder waren.",r:"R\u00f6mer 5,8"},
+  "2026-03-08":{s:"Okuli",t:"Wer die Hand an den Pflug legt und sieht zur\u00fcck, der ist nicht geschickt f\u00fcr das Reich Gottes.",r:"Lukas 9,62"},
+  "2026-03-15":{s:"L\u00e4tare",t:"Wenn das Weizenkorn nicht in die Erde f\u00e4llt und erstirbt, bleibt es allein; wenn es aber erstirbt, bringt es viel Frucht.",r:"Johannes 12,24"},
+  "2026-03-22":{s:"Judika",t:"Der Menschensohn ist nicht gekommen, dass er sich dienen lasse, sondern dass er diene und gebe sein Leben als L\u00f6segeld f\u00fcr viele.",r:"Matth\u00e4us 20,28"},
+  "2026-03-29":{s:"Palmsonntag",t:"Der Menschensohn muss erh\u00f6ht werden, auf dass alle, die an ihn glauben, das ewige Leben haben.",r:"Johannes 3,14b.15"},
+  "2026-04-02":{s:"Gr\u00fcndonnerstag",t:"Er hat ein Ged\u00e4chtnis gestiftet seiner Wunder, der gn\u00e4dige und barmherzige Herr.",r:"Psalm 111,4"},
+  "2026-04-03":{s:"Karfreitag",t:"Also hat Gott die Welt geliebt, dass er seinen eingeborenen Sohn gab, auf dass alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben.",r:"Johannes 3,16"},
+  "2026-04-05":{s:"Ostersonntag",t:"Christus spricht: Ich war tot, und siehe, ich bin lebendig von Ewigkeit zu Ewigkeit und habe die Schl\u00fcssel des Todes und der H\u00f6lle.",r:"Offenbarung 1,18"},
+  "2026-04-06":{s:"Ostermontag",t:"Christus spricht: Ich war tot, und siehe, ich bin lebendig von Ewigkeit zu Ewigkeit und habe die Schl\u00fcssel des Todes und der H\u00f6lle.",r:"Offenbarung 1,18"},
+  "2026-04-12":{s:"Quasimodogeniti",t:"Gelobt sei Gott, der Vater unseres Herrn Jesus Christus, der uns nach seiner gro\u00dfen Barmherzigkeit wiedergeboren hat zu einer lebendigen Hoffnung durch die Auferstehung Jesu Christi von den Toten.",r:"1. Petrus 1,3"},
+  "2026-04-19":{s:"Miserikordias Domini",t:"Christus spricht: Ich bin der gute Hirte. Meine Schafe h\u00f6ren meine Stimme, und ich kenne sie und sie folgen mir; und ich gebe ihnen das ewige Leben.",r:"Johannes 10,11a.27-28a"},
+  "2026-04-26":{s:"Jubilate",t:"Ist jemand in Christus, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, Neues ist geworden.",r:"2. Korinther 5,17"},
+  "2026-05-03":{s:"Kantate",t:"Singet dem Herrn ein neues Lied, denn er tut Wunder.",r:"Psalm 98,1"},
+  "2026-05-10":{s:"Rogate",t:"Gelobt sei Gott, der mein Gebet nicht verwirft noch seine G\u00fcte von mir wendet.",r:"Psalm 66,20"},
+  "2026-05-14":{s:"Christi Himmelfahrt",t:"Christus spricht: Wenn ich erh\u00f6ht werde von der Erde, so will ich alle zu mir ziehen.",r:"Johannes 12,32"},
+  "2026-05-17":{s:"Exaudi",t:"Christus spricht: Wenn ich erh\u00f6ht werde von der Erde, so will ich alle zu mir ziehen.",r:"Johannes 12,32"},
+  "2026-05-24":{s:"Pfingstsonntag",t:"Es soll nicht durch Heer oder Kraft, sondern durch meinen Geist geschehen, spricht der Herr Zebaoth.",r:"Sacharja 4,6b"},
+  "2026-05-25":{s:"Pfingstmontag",t:"Es soll nicht durch Heer oder Kraft, sondern durch meinen Geist geschehen, spricht der Herr Zebaoth.",r:"Sacharja 4,6b"},
+  "2026-05-31":{s:"Trinitatis",t:"Die Gnade unseres Herrn Jesus Christus und die Liebe Gottes und die Gemeinschaft des Heiligen Geistes sei mit euch allen.",r:"2. Korinther 13,13"},
+  "2026-06-07":{s:"1. So. nach Trinitatis",t:"Wer euch h\u00f6rt, der h\u00f6rt mich; und wer euch verachtet, der verachtet mich.",r:"Lukas 10,16a"},
+  "2026-06-14":{s:"2. So. nach Trinitatis",t:"Kommt her zu mir, alle, die ihr m\u00fchselig und beladen seid; ich will euch erquicken.",r:"Matth\u00e4us 11,28"},
+  "2026-06-21":{s:"3. So. nach Trinitatis",t:"Der Menschensohn ist gekommen, zu suchen und selig zu machen, was verloren ist.",r:"Lukas 19,10"},
+  "2026-06-28":{s:"4. So. nach Trinitatis",t:"Einer trage des andern Last, so werdet ihr das Gesetz Christi erf\u00fcllen.",r:"Galater 6,2"},
+  "2026-07-05":{s:"5. So. nach Trinitatis",t:"Aus Gnade seid ihr gerettet durch Glauben, und das nicht aus euch: Gottes Gabe ist es.",r:"Epheser 2,8"},
+  "2026-07-12":{s:"6. So. nach Trinitatis",t:"So spricht der Herr: F\u00fcrchte dich nicht, denn ich habe dich erl\u00f6st; ich habe dich bei deinem Namen gerufen; du bist mein!",r:"Jesaja 43,1"},
+  "2026-07-19":{s:"7. So. nach Trinitatis",t:"So seid ihr nun nicht mehr G\u00e4ste und Fremdlinge, sondern Mitb\u00fcrger der Heiligen und Gottes Hausgenossen.",r:"Epheser 2,19"},
+  "2026-07-26":{s:"8. So. nach Trinitatis",t:"Wandelt als Kinder des Lichts; die Frucht des Lichts ist lauter G\u00fcte und Gerechtigkeit und Wahrheit.",r:"Epheser 5,8b.9"},
+  "2026-08-02":{s:"9. So. nach Trinitatis",t:"Wem viel gegeben ist, bei dem wird man viel suchen; und wem viel anvertraut ist, von dem wird man umso mehr fordern.",r:"Lukas 12,48b"},
+  "2026-08-09":{s:"10. So. nach Trinitatis",t:"Wohl dem Volk, dessen Gott der Herr ist, dem Volk, das er zum Erbe erw\u00e4hlt hat!",r:"Psalm 33,12"},
+  "2026-08-16":{s:"11. So. nach Trinitatis",t:"Gott widersteht den Hochm\u00fctigen, aber den Dem\u00fctigen gibt er Gnade.",r:"1. Petrus 5,5b"},
+  "2026-08-23":{s:"12. So. nach Trinitatis",t:"Das geknickte Rohr wird er nicht zerbrechen, und den glimmenden Docht wird er nicht ausl\u00f6schen.",r:"Jesaja 42,3a"},
+  "2026-08-30":{s:"13. So. nach Trinitatis",t:"Christus spricht: Was ihr getan habt einem von diesen meinen geringsten Br\u00fcdern, das habt ihr mir getan.",r:"Matth\u00e4us 25,40b"},
+  "2026-09-06":{s:"14. So. nach Trinitatis",t:"Lobe den Herrn, meine Seele, und vergiss nicht, was er dir Gutes getan hat.",r:"Psalm 103,2"},
+  "2026-09-13":{s:"15. So. nach Trinitatis",t:"Alle eure Sorge werft auf ihn; denn er sorgt f\u00fcr euch.",r:"1. Petrus 5,7"},
+  "2026-09-20":{s:"16. So. nach Trinitatis",t:"Christus Jesus hat dem Tode die Macht genommen und das Leben und ein unverg\u00e4ngliches Wesen ans Licht gebracht durch das Evangelium.",r:"2. Timotheus 1,10b"},
+  "2026-09-27":{s:"17. So. nach Trinitatis",t:"Unser Glaube ist der Sieg, der die Welt \u00fcberwunden hat.",r:"1. Johannes 5,4c"},
+  "2026-10-04":{s:"Erntedankfest",t:"Aller Augen warten auf dich, und du gibst ihnen ihre Speise zur rechten Zeit.",r:"Psalm 145,15"},
+  "2026-10-11":{s:"19. So. nach Trinitatis",t:"Heile du mich, Herr, so werde ich heil; hilf du mir, so ist mir geholfen.",r:"Jeremia 17,14"},
+  "2026-10-18":{s:"20. So. nach Trinitatis",t:"Es ist dir gesagt, Mensch, was gut ist und was der Herr von dir fordert; nichts als Gottes Wort halten und Liebe \u00fcben und dem\u00fctig sein vor deinem Gott.",r:"Micha 6,8"},
+  "2026-10-25":{s:"21. So. nach Trinitatis",t:"Lass dich nicht vom B\u00f6sen \u00fcberwinden, sondern \u00fcberwinde das B\u00f6se mit Gutem.",r:"R\u00f6mer 12,21"},
+  "2026-11-01":{s:"22. So. nach Trinitatis",t:"Bei dir ist die Vergebung, dass man dich f\u00fcrchte.",r:"Psalm 130,4"},
+  "2026-11-08":{s:"Drittletzter So. des Kirchenjahres",t:"Selig sind die Frieden stiften; denn sie werden Gottes Kinder hei\u00dfen.",r:"Matth\u00e4us 5,9"},
+  "2026-11-15":{s:"Vorletzter So. des Kirchenjahres",t:"Wir m\u00fcssen alle offenbar werden vor dem Richterstuhl Christi.",r:"2. Korinther 5,10a"},
+  "2026-11-18":{s:"Bu\u00df- und Bettag",t:"Gerechtigkeit erh\u00f6ht ein Volk; aber die S\u00fcnde ist der Leute Verderben.",r:"Spr\u00fcche 14,34"},
+  "2026-11-22":{s:"Ewigkeitssonntag",t:"Lasst eure Lenden umg\u00fcrtet sein und eure Lichter brennen.",r:"Lukas 12,35"},
+  "2026-11-29":{s:"1. Advent",t:"Siehe, dein K\u00f6nig kommt zu dir, ein Gerechter und ein Helfer.",r:"Sacharja 9,9b"}
 };
 
-// Spruch für das aktuelle Datum finden:
-// Jeweils gültig vom Sonntag bis zum nächsten Samstag
-function getSpruch() {
-  var today = new Date();
-  // Suche: gehe bis zu 6 Tage zurück um den zugehörigen Sonntag zu finden
-  for (var d = 0; d <= 6; d++) {
-    var dt = new Date(today);
-    dt.setDate(today.getDate() - d);
-    var key = dt.toISOString().slice(0,10);
-    if (SPRUECHE[key]) return SPRUECHE[key];
+function getSpruch(){
+  var today=new Date();
+  for(var d=0;d<=6;d++){
+    var dt=new Date(today); dt.setDate(today.getDate()-d);
+    var key=dt.getFullYear()+'-'+p2(dt.getMonth()+1)+'-'+p2(dt.getDate());
+    if(SPRUECHE[key]) return SPRUECHE[key];
   }
-  // Fallback: nächstgelegener Eintrag
-  return { s:"", t:"Singet dem Herrn ein neues Lied, denn er tut Wunder.", r:"Psalm 98,1" };
+  return {s:'',t:'Singet dem Herrn ein neues Lied, denn er tut Wunder.',r:'Psalm 98,1'};
+}
+function showSpruch(){
+  var sp=getSpruch();
+  document.getElementById('spN').textContent = sp.s;
+  document.getElementById('spT').textContent = '\u201e'+sp.t+'\u201c';
+  document.getElementById('spR').textContent = sp.r;
+}
+showSpruch();
+var now=new Date();
+var msToMidnight=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1)-now;
+setTimeout(function(){ showSpruch(); setInterval(showSpruch,86400000); }, msToMidnight);
+
+// ── Gottesdienst: iCal parsen ohne RegExp ──
+var ICAL_URL = 'https://api2.churchdesk.com/ical/parish/67323?organizationId=5801';
+// Mehrere Proxy-Fallbacks
+var PROXIES = [
+  'https://api.allorigins.win/get?url=',
+  'https://api.codetabs.com/v1/proxy?quest=',
+  'https://thingproxy.freeboard.io/fetch/'
+];
+var proxyIdx = 0;
+
+var WDAYS_LANG = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+var MON_KURZ   = ['Jan','Feb','M\u00e4r','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
+
+// iCal-Datum parsen: 20260514T110000 oder 20260514T110000Z
+function parseIcalDt(str) {
+  if(!str) return null;
+  // Nach dem letzten Doppelpunkt (TZID-Variante: DTSTART;TZID=...:20260514T110000)
+  var colon = str.lastIndexOf(':');
+  if(colon >= 0) str = str.slice(colon+1);
+  str = str.replace('Z','');
+  var y  = parseInt(str.slice(0,4),10);
+  var mo = parseInt(str.slice(4,6),10)-1;
+  var d  = parseInt(str.slice(6,8),10);
+  var h  = str.length > 8 ? parseInt(str.slice(9,11),10)||0 : 0;
+  var mi = str.length > 8 ? parseInt(str.slice(11,13),10)||0 : 0;
+  var dt = new Date(y, mo, d, h, mi, 0);
+  return isNaN(dt.getTime()) ? null : dt;
 }
 
+// iCal-Text parsen – rein mit String-Methoden, kein RegExp
+function parseIcal(raw) {
+  // Zeilenumbrüche normalisieren
+  raw = raw.replace(/\r\n/g,'\n').replace(/\r/g,'\n');
+  // Line-folding aufheben (Folgezeile beginnt mit Leerzeichen oder Tab)
+  var lines = raw.split('\n');
+  var unfolded = [];
+  for(var i=0; i<lines.length; i++) {
+    var line = lines[i];
+    if(line.length > 0 && (line[0]===' ' || line[0]==='\t')) {
+      if(unfolded.length > 0) unfolded[unfolded.length-1] += line.slice(1);
+    } else {
+      unfolded.push(line);
+    }
+  }
 
-// Wochenspruch anzeigen
-function showSpruch(){var sp=getSpruch();document.getElementById('spN').textContent=sp.s;document.getElementById('spT').textContent='„'+sp.t+'“';document.getElementById('spR').textContent=sp.r;}
-showSpruch();
-// täglich um Mitternacht aktualisieren
-var now=new Date(),msToMidnight=(new Date(now.getFullYear(),now.getMonth(),now.getDate()+1)-now);
-setTimeout(function(){showSpruch();setInterval(showSpruch,24*60*60*1000);},msToMidnight);
+  var events = [];
+  var inEvent = false;
+  var cur = {};
+
+  for(var j=0; j<unfolded.length; j++) {
+    var line = unfolded[j].trim();
+    if(line === 'BEGIN:VEVENT') { inEvent=true; cur={}; continue; }
+    if(line === 'END:VEVENT')   { inEvent=false; if(cur.dt) events.push(cur); continue; }
+    if(!inEvent) continue;
+
+    // Key und Value trennen am ersten ':'
+    var sep = line.indexOf(':');
+    if(sep < 0) continue;
+    var key = line.slice(0, sep).toUpperCase();
+    var val = line.slice(sep+1).trim();
+
+    // DTSTART kann mit TZID-Parameter kommen: DTSTART;TZID=Europe/Berlin:20260514T110000
+    if(key === 'DTSTART' || key.slice(0,7) === 'DTSTART') {
+      cur.dt = parseIcalDt(line); // gesamte Zeile übergeben
+    } else if(key === 'SUMMARY') {
+      cur.title = val.replace(/\\,/g,',').replace(/\\n/g,' ').replace(/\\;/g,';');
+    } else if(key === 'LOCATION') {
+      cur.ort = val.replace(/\\,/g,',').replace(/\\n/g,' ').replace(/\\;/g,';');
+    } else if(key === 'CATEGORIES') {
+      cur.categories = val.toLowerCase();
+    }
+  }
+
+  // Sortieren nach Datum
+  events.sort(function(a,b){ return a.dt - b.dt; });
+  return events;
+}
+
+function renderGodi(ev) {
+  var box = document.getElementById('godiContent');
+  if(!ev) {
+    box.innerHTML = '<span class="godi-placeholder">Kein Gottesdienst eingetragen</span>';
+    return;
+  }
+  var wd     = WDAYS_LANG[ev.dt.getDay()];
+  var datum  = ev.dt.getDate()+'. '+MON_KURZ[ev.dt.getMonth()]+' '+ev.dt.getFullYear();
+  var zeit   = p2(ev.dt.getHours())+':'+p2(ev.dt.getMinutes())+' Uhr';
+  var titel  = ev.title || 'Gottesdienst';
+  var ort    = ev.ort ? ev.ort.split(',')[0].trim() : '';
+  box.innerHTML =
+    '<div class="godi-title">'+titel+'</div>'
+    +'<div class="godi-zeit">'+wd+', '+datum+' \u00b7 '+zeit+'</div>'
+    +(ort ? '<div class="godi-ort">'+ort+'</div>' : '');
+}
+
+function tryLoadGodi(idx) {
+  if(idx >= PROXIES.length) {
+    document.getElementById('godiContent').innerHTML =
+      '<span class="godi-placeholder">Nicht verf\u00fcgbar</span>';
+    return;
+  }
+  var url = PROXIES[idx] + encodeURIComponent(ICAL_URL);
+  fetch(url)
+  .then(function(r){ return r.text(); })
+  .then(function(text){
+    // allorigins gibt JSON zurück, andere geben raw iCal
+    var ical = text;
+    if(text.trim().slice(0,1) === '{') {
+      try {
+        var obj = JSON.parse(text);
+        ical = obj.contents || obj.data || text;
+      } catch(e) {}
+    }
+    if(ical.indexOf('BEGIN:VCALENDAR') < 0) {
+      // Kein gültiges iCal – nächsten Proxy versuchen
+      tryLoadGodi(idx+1);
+      return;
+    }
+    var events = parseIcal(ical);
+    var now = new Date();
+    var next = null;
+    for(var i=0; i<events.length; i++){
+      var ev = events[i];
+      if(ev.dt <= now) continue;
+      // Nur Gottesdienste und Andachten anzeigen
+      var isGD = false;
+      // 1. Prüfe CATEGORIES-Feld
+      if(ev.categories) {
+        isGD = ev.categories.indexOf('gottesdienst') >= 0
+            || ev.categories.indexOf('andacht') >= 0
+            || ev.categories.indexOf('worship') >= 0
+            || ev.categories.indexOf('service') >= 0;
+      }
+      // 2. Prüfe Titel (Fallback falls kein CATEGORIES gesetzt)
+      if(!isGD && ev.title) {
+        var t = ev.title.toLowerCase();
+        isGD = t.indexOf('gottesdienst') >= 0
+            || t.indexOf('andacht') >= 0
+            || t.indexOf('taufe') >= 0
+            || t.indexOf('konfirmation') >= 0
+            || t.indexOf('abendmahl') >= 0
+            || t.indexOf('himmelfahrt') >= 0
+            || t.indexOf('pfingst') >= 0
+            || t.indexOf('weihnacht') >= 0
+            || t.indexOf('karfreitag') >= 0
+            || t.indexOf('ostern') >= 0;
+      }
+      if(isGD){ next=ev; break; }
+    }
+    renderGodi(next);
+  })
+  .catch(function(){ tryLoadGodi(idx+1); });
+}
+
+function loadGodi(){ tryLoadGodi(0); }
+loadGodi();
+setInterval(loadGodi, 60*60*1000);
 </script>
+
 </body>
 </html>
