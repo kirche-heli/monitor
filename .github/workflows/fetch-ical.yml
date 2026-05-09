@@ -2,10 +2,11 @@ name: iCal Feed aktualisieren
 
 on:
   schedule:
-    # Jede Stunde aktualisieren
     - cron: '0 * * * *'
-  # Auch manuell auslösbar
   workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   fetch:
@@ -17,29 +18,56 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v4
 
-      - name: ChurchDesk iCal-Feed herunterladen
+      - name: ChurchDesk iCal laden und UTC nach Europe/Berlin umrechnen
         run: |
           curl -sL \
             --max-time 15 \
-            --user-agent "Mozilla/5.0 (compatible; KircheHeli-Monitor/1.0)" \
+            --user-agent "Mozilla/5.0" \
             "https://api2.churchdesk.com/ical/parish/67323?organizationId=5801" \
-            -o kalender.ics
-          
-          # Prüfen ob gültiges iCal
-          if grep -q "BEGIN:VCALENDAR" kalender.ics; then
-            echo "✅ iCal erfolgreich geladen"
-            wc -l kalender.ics
-          else
-            echo "❌ Kein gültiges iCal erhalten"
-            cat kalender.ics
+            -o kalender_raw.ics
+
+          if ! grep -q "BEGIN:VCALENDAR" kalender_raw.ics; then
+            echo "FEHLER: Kein gültiges iCal"
+            cat kalender_raw.ics
             exit 1
           fi
 
-      - name: Änderungen committen
+          echo "OK: $(wc -l < kalender_raw.ics) Zeilen geladen"
+
+          python3 - << 'PYEOF'
+import re
+from datetime import datetime, timezone
+import zoneinfo
+
+tz = zoneinfo.ZoneInfo("Europe/Berlin")
+
+with open("kalender_raw.ics", "r", encoding="utf-8", errors="replace") as f:
+    content = f.read()
+
+def utc_to_berlin(m):
+    pre, s = m.group(1), m.group(2)
+    try:
+        dt = datetime(int(s[0:4]),int(s[4:6]),int(s[6:8]),
+                      int(s[9:11]),int(s[11:13]),int(s[13:15]),
+                      tzinfo=timezone.utc).astimezone(tz)
+        return f"{pre};TZID=Europe/Berlin:{dt.strftime('%Y%m%dT%H%M%S')}"
+    except:
+        return m.group(0)
+
+result = re.sub(r'(DTSTART|DTEND):(\d{8}T\d{6})Z', utc_to_berlin, content)
+
+n = len(re.findall(r'DTSTART:.*?Z', content))
+print(f"UTC-Termine umgerechnet: {n}")
+
+with open("kalender.ics", "w", encoding="utf-8") as f:
+    f.write(result)
+print("Fertig")
+PYEOF
+
+      - name: Committen und pushen
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add kalender.ics
-          # Nur committen wenn sich etwas geändert hat
-          git diff --staged --quiet || git commit -m "iCal aktualisiert: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git add -f kalender.ics
+          git diff --staged --quiet && echo "Keine Änderungen" || git commit -m "kalender.ics: $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
