@@ -325,19 +325,6 @@ STATUS:CONFIRMED
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
-UID:36163946
-DTSTAMP:20250105T201506Z
-DTSTART;TZID=Europe/Berlin:20260309T090000
-DTEND;TZID=Europe/Berlin:20260309T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106240
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163946
-URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163946
-STATUS:CONFIRMED
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
 UID:38119954
 DTSTAMP:20260330T102515Z
 DTSTART;TZID=Europe/Berlin:20260412T100000
@@ -406,6 +393,20 @@ LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
  u
 DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765033
 URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765033
+STATUS:CONFIRMED
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765034
+DTSTAMP:20260107T090516Z
+DTSTART;TZID=Europe/Berlin:20260826T170000
+DTEND;TZID=Europe/Berlin:20260826T190000
+SUMMARY:Spiele-Abend
+SEQUENCE:92360156
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765034
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765034
 STATUS:CONFIRMED
 CATEGORIES:Geselligkeit
 END:VEVENT
@@ -1192,18 +1193,17 @@ STATUS:CONFIRMED
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
-UID:44765034
-DTSTAMP:20260107T090516Z
-DTSTART;TZID=Europe/Berlin:20260826T170000
-DTEND;TZID=Europe/Berlin:20260826T190000
-SUMMARY:Spiele-Abend
-SEQUENCE:92360156
-LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
- u
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765034
-URL;VALUE=URI:https://landing.churchdesk.com/de/e/44765034
+UID:39117816
+DTSTAMP:20250510T140410Z
+DTSTART;TZID=Europe/Berlin:20270510T090000
+DTEND;TZID=Europe/Berlin:20270510T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:86236237
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/39117816
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/39117816
 STATUS:CONFIRMED
-CATEGORIES:Geselligkeit
+CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
 UID:44765037
