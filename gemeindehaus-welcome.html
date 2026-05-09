@@ -2,295 +2,317 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=3840, initial-scale=1.0">
 <title>Ev. Gemeindehaus Hessisch Lichtenau</title>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-html, body { width:100%; height:100%; overflow:hidden; }
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;overflow:hidden;}
 
-body {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-  /* Cremefarbener Hintergrund wie im Beispielbild */
+body{
+  width:100vw; height:100vh;
+  font-family:'Lato',sans-serif;
   background:
-    radial-gradient(ellipse 60% 55% at 78% 18%, rgba(240,210,175,0.7) 0%, transparent 65%),
-    radial-gradient(ellipse 55% 50% at 15% 85%, rgba(185,215,160,0.45) 0%, transparent 60%),
-    linear-gradient(135deg, #f0e8d8 0%, #ece4d0 50%, #dce8c8 100%);
+    radial-gradient(ellipse 65% 60% at 80% 15%, rgba(238,205,168,0.75) 0%, transparent 62%),
+    radial-gradient(ellipse 50% 55% at 12% 90%, rgba(180,212,152,0.45) 0%, transparent 58%),
+    linear-gradient(148deg, #f0e8d8 0%, #ece3cc 45%, #dbe7c5 100%);
 }
 
-/* =====================
-   HAUPT-LAYOUT: 2 Spalten, fest
-   Links 56% | Rechts 44%
-   ===================== */
-.layout {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  grid-template-columns: 56% 44%;
+/* ── HAUPT-GRID: 2 Spalten, nie überlappend ── */
+.page {
+  position:absolute; inset:0;
+  display:grid;
+  /* Links 57%, Rechts 43% - fest */
+  grid-template-columns: 57% 43%;
   grid-template-rows: 100%;
 }
 
-/* =====================
+/* ════════════════════════════
    LINKE SPALTE
-   ===================== */
+   ════════════════════════════ */
 .col-left {
-  position: relative;
-  overflow: hidden;
+  position:relative;
+  overflow:hidden;
 }
 
-/* Begrüßungstext – oberer Bereich links */
+/* Begrüßung – oben links, gestapelt wie im Beispiel */
 .greeting {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  padding: 5.5vh 3vw 0 4.5vw;
-  z-index: 10;
-  /* Kein Pointer-events nötig */
+  position:absolute;
+  top:0; left:0; right:0;
+  padding: 4.5vh 2vw 0 4.5vw;
+  z-index:10;
 }
 
-.herzlich {
-  font-family: 'Dancing Script', cursive;
-  font-size: clamp(36px, 5.2vw, 80px);
+/* "Herzlich" – kleinere Kursivschrift */
+.txt-herzlich {
+  font-family:'Dancing Script', cursive;
+  font-size: clamp(38px, 4.8vw, 74px);
   color: #3a5225;
   line-height: 1.05;
+  display:block;
 }
 
-.willkommen {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(52px, 7.8vw, 120px);
-  font-weight: 900;
-  color: #1a1a1a;
-  line-height: 0.9;
-  letter-spacing: -2px;
-  text-transform: uppercase;
+/* Herz-Symbol: direkt nach "Herzlich", rechts davon – wie im Beispiel */
+.txt-herzlich-wrap {
+  display:flex;
+  align-items:center;
+  gap:0.6vw;
 }
-
-.sub1 {
-  font-size: clamp(14px, 1.7vw, 26px);
-  color: #555;
-  font-weight: 300;
-  margin-top: 1.8vh;
-  letter-spacing: 0.4px;
-}
-
-.sub2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: clamp(18px, 2.4vw, 36px);
-  color: #3a5225;
-  margin-top: 0.4vh;
-}
-
-/* Herz-Symbol zwischen links und rechts oben */
-.heart {
-  position: absolute;
-  top: 4vh;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: clamp(18px, 2.2vw, 34px);
+.heart-sym {
+  font-size: clamp(20px, 2.4vw, 36px);
   color: #b08040;
-  opacity: 0.7;
-  z-index: 20;
+  opacity: 0.75;
+  line-height:1;
+  /* Leicht nach oben versetzt damit es oben an "Herzlich" sitzt */
+  margin-top: -1.5vh;
+  flex-shrink:0;
 }
 
-/* Gebäude-Bild: füllt untere 65% der linken Spalte */
+/* "WILLKOMMEN" – groß, fett, volle Breite */
+.txt-willkommen {
+  font-family:'Playfair Display', serif;
+  font-size: clamp(56px, 8.2vw, 128px);
+  font-weight:900;
+  color:#1a1a1a;
+  line-height:0.88;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  display:block;
+  margin-top:0.3vh;
+}
+
+/* "im Ev. Gemeindehaus" – leichter Text */
+.txt-sub1 {
+  font-size: clamp(14px, 1.7vw, 27px);
+  color:#555;
+  font-weight:300;
+  margin-top:1.8vh;
+  letter-spacing:0.3px;
+  display:block;
+}
+
+/* "Hessisch Lichtenau" – kursiv, grün */
+.txt-sub2 {
+  font-family:'Dancing Script', cursive;
+  font-size: clamp(20px, 2.5vw, 39px);
+  color:#3a5225;
+  margin-top:0.3vh;
+  display:block;
+}
+
+/* Gebäude: untere 62% der linken Spalte, nahtlos */
 .building {
-  position: absolute;
-  bottom: 0;
-  left: -2%;
-  width: 105%;
-  z-index: 5;
-  /* Weiche Kante nach oben */
+  position:absolute;
+  bottom:0; left:-1.5%;
+  width:106%;
+  z-index:5;
   -webkit-mask-image: linear-gradient(to top,
-    black 0%,
-    black 55%,
-    rgba(0,0,0,0.85) 68%,
-    rgba(0,0,0,0.4) 80%,
-    transparent 92%
-  );
+    black 0%, black 50%,
+    rgba(0,0,0,0.9) 62%,
+    rgba(0,0,0,0.5) 74%,
+    rgba(0,0,0,0.15) 84%,
+    transparent 94%);
   mask-image: linear-gradient(to top,
-    black 0%,
-    black 55%,
-    rgba(0,0,0,0.85) 68%,
-    rgba(0,0,0,0.4) 80%,
-    transparent 92%
-  );
+    black 0%, black 50%,
+    rgba(0,0,0,0.9) 62%,
+    rgba(0,0,0,0.5) 74%,
+    rgba(0,0,0,0.15) 84%,
+    transparent 94%);
 }
+.building img { width:100%; display:block; }
 
-.building img {
-  width: 100%;
-  display: block;
-}
-
-/* =====================
+/* ════════════════════════════
    RECHTE SPALTE
-   ===================== */
+   ════════════════════════════ */
 .col-right {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4vh 4.5vw 4vh 2.5vw;
-  gap: 0;
-  z-index: 10;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  /* Großzügiges Padding damit nichts abgeschnitten wird */
+  padding: 5vh 5vw 5vh 3vw;
+  gap:0;
+  z-index:10;
+  /* Sicherheitsnetz: Overflow nie */
+  overflow:hidden;
 }
 
-/* --- ZEIT-BEREICH --- */
-.section-time {
-  display: flex;
-  align-items: center;
-  gap: 2vw;
+/* ── ZEIT ── */
+.sec-time {
+  display:flex;
+  align-items:center;
+  gap:1.8vw;
   padding-bottom: 3.5vh;
-  border-bottom: 1px solid rgba(90,80,60,0.18);
+  border-bottom: 1px solid rgba(80,70,50,0.15);
+  flex-shrink:0;
 }
 
-.clock-wrap { flex-shrink: 0; }
 .clock-svg {
-  width: clamp(44px, 4.8vw, 74px);
-  height: clamp(44px, 4.8vw, 74px);
+  width: clamp(42px,4.5vw,70px);
+  height: clamp(42px,4.5vw,70px);
+  flex-shrink:0;
 }
 
 .div-v {
-  width: 1.5px;
-  align-self: stretch;
-  margin: 2px 0;
-  background: linear-gradient(to bottom, transparent, rgba(80,70,50,0.28), transparent);
+  width:1.5px; align-self:stretch; margin:3px 0;
+  background:linear-gradient(to bottom, transparent, rgba(70,60,40,0.25), transparent);
+  flex-shrink:0;
 }
 
-.time-nums {
-  font-family: 'Lato', sans-serif;
-  font-size: clamp(48px, 7vw, 108px);
-  font-weight: 300;
-  color: #1a1a1a;
-  letter-spacing: 2px;
-  line-height: 1;
+.time-digits {
+  font-family:'Lato',sans-serif;
+  font-size: clamp(52px, 7.2vw, 112px);
+  font-weight:300;
+  color:#1a1a1a;
+  letter-spacing:2px;
+  line-height:1;
+}
+.time-date-str {
+  font-size: clamp(12px,1.3vw,20px);
+  color:#666; font-weight:300;
+  margin-top:0.9vh; letter-spacing:0.2px;
 }
 
-.time-date {
-  font-size: clamp(13px, 1.35vw, 21px);
-  color: #666;
-  font-weight: 300;
-  margin-top: 1vh;
-  letter-spacing: 0.2px;
-}
-
-/* --- WETTER AKTUELL --- */
-.section-weather {
-  display: flex;
-  align-items: center;
-  gap: 2.5vw;
+/* ── WETTER AKTUELL ── */
+.sec-weather {
+  display:flex;
+  align-items:center;
+  gap:2.2vw;
   padding: 3.5vh 0;
-  border-bottom: 1px solid rgba(90,80,60,0.18);
+  border-bottom: 1px solid rgba(80,70,50,0.15);
+  flex-shrink:0;
 }
 
-.w-icon { flex-shrink: 0; width: clamp(60px,7vw,105px); height: clamp(60px,7vw,105px); }
+.w-icon { flex-shrink:0; width:clamp(62px,7.2vw,108px); height:clamp(62px,7.2vw,108px); }
 .w-icon svg { width:100%; height:100%; }
 
-.w-temp {
-  font-family: 'Lato', sans-serif;
-  font-size: clamp(48px, 6.5vw, 100px);
-  font-weight: 300;
-  color: #1a1a1a;
-  line-height: 1;
+.w-temp-big {
+  font-family:'Lato',sans-serif;
+  font-size: clamp(50px,6.8vw,104px);
+  font-weight:300; color:#1a1a1a; line-height:1;
+}
+.w-desc-str {
+  font-size: clamp(14px,1.5vw,22px);
+  color:#555; font-weight:300; margin-top:0.5vh;
 }
 
-.w-desc {
-  font-size: clamp(14px, 1.5vw, 22px);
-  color: #555;
-  font-weight: 300;
-  margin-top: 0.6vh;
+/* ── FORECAST ── */
+.sec-forecast {
+  padding: 3vh 0 0 0;
+  flex-shrink:0;
 }
-
-/* --- FORECAST --- */
-.section-forecast {
-  padding: 3vh 0 2.5vh 0;
-  border-bottom: 1px solid rgba(90,80,60,0.18);
+.fc-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0.8vw;
 }
-
-.forecast-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1vw;
-}
-
 .fc-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.7vh;
+  display:flex; flex-direction:column;
+  align-items:center; gap:0.65vh;
 }
-
 .fc-name {
-  font-size: clamp(10px, 1.15vw, 17px);
-  font-weight: 700;
-  color: #3a3a3a;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-size:clamp(10px,1.1vw,17px);
+  font-weight:700; color:#3a3a3a;
+  letter-spacing:1.5px; text-transform:uppercase;
 }
-
-.fc-ico { width: clamp(24px,2.8vw,44px); height: clamp(24px,2.8vw,44px); }
+.fc-ico { width:clamp(24px,2.7vw,42px); height:clamp(24px,2.7vw,42px); }
 .fc-ico svg { width:100%; height:100%; }
-.fc-hi { font-size: clamp(12px,1.3vw,20px); font-weight: 700; color: #222; }
-.fc-lo { font-size: clamp(10px,1.1vw,16px); font-weight: 300; color: #999; }
+.fc-hi { font-size:clamp(12px,1.3vw,20px); font-weight:700; color:#222; }
+.fc-lo { font-size:clamp(10px,1.1vw,16px); font-weight:300; color:#999; }
 
-/* --- FOOTER --- */
-.section-footer {
-  padding-top: 2.2vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* ── STATUS-BADGE (Live / Offline) unten rechts ── */
+.status-badge {
+  position:absolute;
+  bottom: 2.8vh; right: 3.5vw;
+  display:flex; align-items:center; gap:0.5vw;
+  z-index:20;
+}
+.status-dot {
+  width:8px; height:8px; border-radius:50%;
+  background:#22c55e; /* grün = online */
+  box-shadow: 0 0 6px rgba(34,197,94,0.7);
+  animation: glowpulse 2.5s ease-in-out infinite;
+  transition: background 0.5s;
+  flex-shrink:0;
+}
+.status-dot.offline { background:#ef4444; box-shadow:0 0 6px rgba(239,68,68,0.7); }
+@keyframes glowpulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.status-txt {
+  font-size:clamp(10px,1vw,15px);
+  color:#aaa; font-weight:300;
 }
 
-.loc {
-  display: flex; align-items: center; gap: 0.55vw;
-  font-size: clamp(10px, 1vw, 15px); color: #999; font-weight: 300;
-}
-.loc-dot { width:6px;height:6px;border-radius:50%;background:#3a5225;opacity:0.6;flex-shrink:0; }
+/* ════════════════════════════
+   DEKORATIVE BLÄTTER
+   ════════════════════════════ */
+.deco { position:absolute; pointer-events:none; z-index:3; }
 
-.live-wrap { display:flex; align-items:center; gap:0.5vw; }
-.live-dot {
-  width:6px;height:6px;border-radius:50%;background:#3a5225;
-  animation: pulse 2.5s ease-in-out infinite;
+/* Ast mit Blättern – oben links, wie im Beispiel */
+.deco-tl {
+  top:-1vh; left:-0.5vw;
+  width: clamp(180px, 20vw, 310px);
+  opacity:0.68;
 }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
-.live-txt { font-size:clamp(10px,1vw,14px); color:#bbb; }
-
-/* Blätter-Dekor – rein dekorativ, z-index unter Inhalt */
-.leaf { position:absolute; pointer-events:none; z-index:2; }
-.leaf-tl { top:0;left:0; width:clamp(160px,18vw,280px); opacity:0.65; }
-.leaf-br { bottom:0;right:0; width:clamp(110px,13vw,200px); opacity:0.55; transform:rotate(185deg) scaleX(-1); }
+/* Kleiner Blatt-Zweig – unten rechts */
+.deco-br {
+  bottom:-0.5vh; right:0.5vw;
+  width: clamp(100px, 11vw, 170px);
+  opacity:0.55;
+}
 </style>
 </head>
 <body>
 
-<!-- Dekorative Blätter -->
-<svg class="leaf leaf-tl" viewBox="0 0 320 270" xmlns="http://www.w3.org/2000/svg">
-  <path d="M-25,-8 Q65,-48 138,28 Q210,104 228,192 Q165,155 102,108 Q40,62 -25,-8Z" fill="#6a8845" opacity="0.4"/>
-  <path d="M8,-14 Q100,-58 178,22 Q256,102 258,200 Q190,162 122,112 Q54,62 8,-14Z" fill="#4e6e30" opacity="0.28"/>
-  <path d="M-12,58 Q58,12 118,52 Q182,94 196,164 Q130,140 82,106 Q28,72 -12,58Z" fill="#7a9850" opacity="0.33"/>
-  <path d="M78,-18 Q162,-46 202,30 Q246,108 230,194 Q170,160 132,116 Q88,72 78,-18Z" fill="#5a7835" opacity="0.24"/>
-  <path d="M-20,-5 Q110,65 228,190" stroke="#5a7835" stroke-width="1.6" fill="none" opacity="0.2"/>
+<!-- ── BLÄTTER DEKOR ── -->
+<!-- Ast oben links: Zweig mit herabhängenden Blättern wie im Beispielbild -->
+<svg class="deco deco-tl" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hauptast diagonal von oben links nach rechts unten -->
+  <path d="M10,5 Q80,30 140,80 Q190,125 210,175" stroke="#6a7a40" stroke-width="3.5" fill="none" opacity="0.5"/>
+  <!-- Nebenäste -->
+  <path d="M60,28 Q40,50 20,75" stroke="#6a7a40" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M105,58 Q90,80 72,100" stroke="#6a7a40" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M155,100 Q135,118 118,140" stroke="#6a7a40" stroke-width="1.8" fill="none" opacity="0.35"/>
+  <!-- Blätter am Hauptast -->
+  <path d="M10,5 Q55,-18 85,15 Q60,35 10,5Z" fill="#7a9248" opacity="0.45"/>
+  <path d="M35,14 Q82,-12 108,22 Q80,40 35,14Z" fill="#5e7835" opacity="0.35"/>
+  <path d="M68,28 Q115,2 138,38 Q110,55 68,28Z" fill="#7a9248" opacity="0.4"/>
+  <path d="M100,52 Q148,26 168,64 Q140,78 100,52Z" fill="#5e7835" opacity="0.38"/>
+  <path d="M130,75 Q178,50 195,90 Q165,102 130,75Z" fill="#7a9248" opacity="0.36"/>
+  <path d="M158,102 Q205,78 218,118 Q188,128 158,102Z" fill="#6a8840" opacity="0.33"/>
+  <!-- Blätter an Nebenästen (nach unten hängend) -->
+  <path d="M60,28 Q32,45 14,72 Q38,65 60,28Z" fill="#8aaa52" opacity="0.38"/>
+  <path d="M55,32 Q24,52 8,80 Q30,70 55,32Z" fill="#6a8840" opacity="0.3"/>
+  <path d="M105,58 Q82,78 66,102 Q88,92 105,58Z" fill="#7a9248" opacity="0.37"/>
+  <path d="M155,100 Q132,120 116,146 Q138,134 155,100Z" fill="#6a8840" opacity="0.35"/>
+  <!-- Kleinere Blättchen oben -->
+  <path d="M18,8 Q-5,28 5,50 Q22,30 18,8Z" fill="#8aaa52" opacity="0.32"/>
+  <path d="M40,12 Q15,35 22,58 Q42,38 40,12Z" fill="#7a9248" opacity="0.28"/>
 </svg>
 
-<svg class="leaf leaf-br" viewBox="0 0 240 210" xmlns="http://www.w3.org/2000/svg">
-  <path d="M-12,-4 Q62,-36 114,28 Q168,92 175,170 Q125,138 80,96 Q34,54 -12,-4Z" fill="#6a8845" opacity="0.4"/>
-  <path d="M10,-6 Q84,-44 136,22 Q190,88 192,172 Q136,140 92,96 Q46,52 10,-6Z" fill="#4e6e30" opacity="0.28"/>
-  <path d="M52,-10 Q122,-30 154,34 Q190,98 174,168 Q128,140 102,104 Q68,66 52,-10Z" fill="#5a7835" opacity="0.25"/>
+<!-- Kleiner Zweig unten rechts -->
+<svg class="deco deco-br" viewBox="0 0 180 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M160,5 Q100,55 60,110 Q30,155 20,195" stroke="#6a7a40" stroke-width="3" fill="none" opacity="0.45"/>
+  <path d="M160,5 Q130,-10 100,20 Q128,22 160,5Z" fill="#7a9248" opacity="0.42"/>
+  <path d="M138,25 Q108,10 78,40 Q106,42 138,25Z" fill="#5e7835" opacity="0.36"/>
+  <path d="M112,52 Q82,38 55,68 Q82,68 112,52Z" fill="#7a9248" opacity="0.38"/>
+  <path d="M88,80 Q58,68 34,98 Q60,96 88,80Z" fill="#6a8840" opacity="0.35"/>
+  <path d="M65,110 Q38,100 18,130 Q44,126 65,110Z" fill="#7a9248" opacity="0.33"/>
+  <path d="M45,140 Q22,132 8,162 Q32,156 45,140Z" fill="#5e7835" opacity="0.3"/>
 </svg>
 
-<!-- Herz oben Mitte -->
-<div class="heart">♡</div>
+<div class="page">
 
-<div class="layout">
-
-  <!-- ======= LINKE SPALTE ======= -->
+  <!-- ══ LINKE SPALTE ══ -->
   <div class="col-left">
 
     <div class="greeting">
-      <div class="herzlich">Herzlich</div>
-      <div class="willkommen">WILLKOMMEN</div>
-      <div class="sub1">im Ev. Gemeindehaus</div>
-      <div class="sub2">Hessisch Lichtenau</div>
+      <!-- "Herzlich" + Herz nebeneinander wie im Beispiel -->
+      <div class="txt-herzlich-wrap">
+        <span class="txt-herzlich">Herzlich</span>
+        <span class="heart-sym">♡</span>
+      </div>
+      <span class="txt-willkommen">WILLKOMMEN</span>
+      <span class="txt-sub1">im Ev. Gemeindehaus</span>
+      <span class="txt-sub2">Hessisch Lichtenau</span>
     </div>
 
     <div class="building">
@@ -299,148 +321,161 @@ body {
 
   </div>
 
-  <!-- ======= RECHTE SPALTE ======= -->
+  <!-- ══ RECHTE SPALTE ══ -->
   <div class="col-right">
 
     <!-- Zeit & Datum -->
-    <div class="section-time">
-      <div class="clock-wrap">
-        <svg class="clock-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="40" cy="40" r="34" stroke="#3a5225" stroke-width="2.5"/>
-          <line id="hHand" x1="40" y1="40" x2="40" y2="26" stroke="#3a5225" stroke-width="3.5" stroke-linecap="round"/>
-          <line id="mHand" x1="40" y1="40" x2="40" y2="13" stroke="#3a5225" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="40" cy="40" r="3.5" fill="#3a5225"/>
-        </svg>
-      </div>
+    <div class="sec-time">
+      <svg class="clock-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="34" stroke="#3a5225" stroke-width="2.5"/>
+        <line id="hHand" x1="40" y1="40" x2="40" y2="26" stroke="#3a5225" stroke-width="3.5" stroke-linecap="round"/>
+        <line id="mHand" x1="40" y1="40" x2="40" y2="13" stroke="#3a5225" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="40" cy="40" r="3.5" fill="#3a5225"/>
+      </svg>
       <div class="div-v"></div>
       <div>
-        <div class="time-nums" id="timeNum">--:--</div>
-        <div class="time-date" id="timeDate">Wird geladen…</div>
+        <div class="time-digits" id="timeNum">--:--</div>
+        <div class="time-date-str" id="timeDate">Wird geladen…</div>
       </div>
     </div>
 
     <!-- Wetter aktuell -->
-    <div class="section-weather">
+    <div class="sec-weather">
       <div class="w-icon" id="wIcon"></div>
       <div>
-        <div class="w-temp"><span id="wTemp">--</span>°C</div>
-        <div class="w-desc" id="wDesc">Wird geladen…</div>
+        <div class="w-temp-big"><span id="wTemp">--</span>°C</div>
+        <div class="w-desc-str" id="wDesc">Wird geladen…</div>
       </div>
     </div>
 
     <!-- 4-Tage Forecast -->
-    <div class="section-forecast">
-      <div class="forecast-grid" id="fcGrid">
+    <div class="sec-forecast">
+      <div class="fc-grid" id="fcGrid">
         <div class="fc-col"><div class="fc-name">--</div><div class="fc-hi">--°</div><div class="fc-lo">--°</div></div>
         <div class="fc-col"><div class="fc-name">--</div><div class="fc-hi">--°</div><div class="fc-lo">--°</div></div>
         <div class="fc-col"><div class="fc-name">--</div><div class="fc-hi">--°</div><div class="fc-lo">--°</div></div>
         <div class="fc-col"><div class="fc-name">--</div><div class="fc-hi">--°</div><div class="fc-lo">--°</div></div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="section-footer">
-      <div class="loc">
-        <div class="loc-dot"></div>
-        Hessisch Lichtenau, 37235 · Hessen
-      </div>
-      <div class="live-wrap">
-        <div class="live-dot"></div>
-        <span class="live-txt" id="liveLabel">Live</span>
       </div>
     </div>
 
   </div><!-- col-right -->
-</div><!-- layout -->
+</div><!-- page -->
+
+<!-- Live-Status Badge – absolut unten rechts -->
+<div class="status-badge">
+  <div class="status-dot" id="statusDot"></div>
+  <span class="status-txt" id="statusTxt">Live</span>
+</div>
 
 <script>
 var DAYS   = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
 var DAYS_S = ['SO','MO','DI','MI','DO','FR','SA'];
 var MON    = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
 
-function p(v){ return String(v).padStart(2,'0'); }
+function p2(v){ return String(v).padStart(2,'0'); }
 
+// ── Uhr ──
 function tick(){
-  var n=new Date();
-  document.getElementById('timeNum').textContent = p(n.getHours())+':'+p(n.getMinutes());
+  var n=new Date(), h=n.getHours(), m=n.getMinutes(), s=n.getSeconds();
+  document.getElementById('timeNum').textContent = p2(h)+':'+p2(m);
   document.getElementById('timeDate').textContent = DAYS[n.getDay()]+', '+n.getDate()+'. '+MON[n.getMonth()]+' '+n.getFullYear();
-  var m=n.getMinutes()+n.getSeconds()/60;
-  var h=(n.getHours()%12)+m/60;
-  var ma=m*6-90, ha=h*30-90;
-  function xy(a,r){ return [40+r*Math.cos(a*Math.PI/180), 40+r*Math.sin(a*Math.PI/180)]; }
-  var mp=xy(ma,24), hp=xy(ha,16);
+  var ma=(m+s/60)*6-90, ha=((h%12)+(m+s/60)/60)*30-90;
+  function pt(a,r){ return [40+r*Math.cos(a*Math.PI/180), 40+r*Math.sin(a*Math.PI/180)]; }
+  var mp=pt(ma,24), hp=pt(ha,16);
   var mh=document.getElementById('mHand'), hh=document.getElementById('hHand');
-  mh.setAttribute('x2',mp[0]); mh.setAttribute('y2',mp[1]);
-  hh.setAttribute('x2',hp[0]); hh.setAttribute('y2',hp[1]);
+  mh.setAttribute('x2',mp[0].toFixed(2)); mh.setAttribute('y2',mp[1].toFixed(2));
+  hh.setAttribute('x2',hp[0].toFixed(2)); hh.setAttribute('y2',hp[1].toFixed(2));
 }
 tick(); setInterval(tick,1000);
 
-function svg(code,sz){
-  var s=sz||90;
-  function e(cx,cy,rx,ry,fill,op){ return '<ellipse cx="'+(s*cx)+'" cy="'+(s*cy)+'" rx="'+(s*rx)+'" ry="'+(s*ry)+'" fill="'+fill+'"'+(op?' opacity="'+op+'"':'')+'/>';}
-  function l(x1,y1,x2,y2,col,w){ return '<line x1="'+(s*x1)+'" y1="'+(s*y1)+'" x2="'+(s*x2)+'" y2="'+(s*y2)+'" stroke="'+col+'" stroke-width="'+(s*w)+'" stroke-linecap="round"/>';}
+// ── Wetter-SVGs ──
+function wSVG(code,sz){
+  var s=sz||90, h=s/2;
+  function e(cx,cy,rx,ry,fill,op){ return '<ellipse cx="'+(s*cx).toFixed(1)+'" cy="'+(s*cy).toFixed(1)+'" rx="'+(s*rx).toFixed(1)+'" ry="'+(s*ry).toFixed(1)+'" fill="'+fill+'"'+(op?' opacity="'+op+'"':'')+'/>';}
+  function li(x1,y1,x2,y2,col,w){ return '<line x1="'+(s*x1).toFixed(1)+'" y1="'+(s*y1).toFixed(1)+'" x2="'+(s*x2).toFixed(1)+'" y2="'+(s*y2).toFixed(1)+'" stroke="'+col+'" stroke-width="'+(s*w).toFixed(1)+'" stroke-linecap="round"/>';}
   var t='<svg viewBox="0 0 '+s+' '+s+'" xmlns="http://www.w3.org/2000/svg">';
-  var h=s/2;
+
   if(code===0){
-    return t+'<circle cx="'+h+'" cy="'+h+'" r="'+(s*.27)+'" fill="#f5c320"/>'+
-    l(.5,.07,.5,.02,'#f5c320',.055)+l(.5,.93,.5,.98,'#f5c320',.055)+
-    l(.07,.5,.02,.5,'#f5c320',.055)+l(.93,.5,.98,.5,'#f5c320',.055)+
-    l(.21,.21,.16,.16,'#f5c320',.055)+l(.79,.79,.84,.84,'#f5c320',.055)+
-    l(.79,.21,.84,.16,'#f5c320',.055)+l(.21,.79,.16,.84,'#f5c320',.055)+'</svg>';
+    return t+'<circle cx="'+h+'" cy="'+h+'" r="'+(s*.27).toFixed(1)+'" fill="#f5c320"/>'+
+      li(.5,.07,.5,.02,'#f5c320',.055)+li(.5,.93,.5,.98,'#f5c320',.055)+
+      li(.07,.5,.02,.5,'#f5c320',.055)+li(.93,.5,.98,.5,'#f5c320',.055)+
+      li(.21,.21,.16,.16,'#f5c320',.055)+li(.79,.79,.84,.84,'#f5c320',.055)+
+      li(.79,.21,.84,.16,'#f5c320',.055)+li(.21,.79,.16,.84,'#f5c320',.055)+'</svg>';
   }
   if(code===1||code===2){
-    return t+'<circle cx="'+(s*.38)+'" cy="'+(s*.35)+'" r="'+(s*.21)+'" fill="#f5c320"/>'+
-    l(.38,.07,.38,.02,'#f5c320',.04)+l(.1,.35,.05,.35,'#f5c320',.04)+l(.19,.14,.14,.1,'#f5c320',.04)+l(.59,.14,.63,.1,'#f5c320',.04)+
-    e(.63,.65,.24,.15,'#c8d8de')+e(.46,.7,.19,.13,'#d5e3e8')+e(.7,.71,.17,.11,'#cdd9e0')+e(.56,.75,.31,.12,'#c5d5dc')+e(.37,.73,.15,.1,'#d8e5ea')+'</svg>';
+    return t+'<circle cx="'+(s*.38).toFixed(1)+'" cy="'+(s*.35).toFixed(1)+'" r="'+(s*.21).toFixed(1)+'" fill="#f5c320"/>'+
+      li(.38,.07,.38,.02,'#f5c320',.04)+li(.1,.35,.05,.35,'#f5c320',.04)+li(.19,.14,.14,.1,'#f5c320',.04)+li(.59,.14,.63,.1,'#f5c320',.04)+
+      e(.63,.65,.24,.15,'#c8d8de')+e(.46,.7,.19,.13,'#d5e3e8')+e(.7,.71,.17,.11,'#cdd9e0')+e(.56,.75,.31,.12,'#c5d5dc')+e(.37,.73,.15,.1,'#d8e5ea')+'</svg>';
   }
   if(code===3){
     return t+e(.52,.37,.28,.17,'#aabac2')+e(.36,.45,.22,.16,'#bccbd3')+e(.66,.47,.19,.14,'#b4c4cc')+e(.5,.53,.37,.15,'#b0c2cc')+'</svg>';
   }
-  if(code>=51&&code<=67||code>=80&&code<=82){
+  if((code>=51&&code<=67)||(code>=80&&code<=82)){
     return t+e(.52,.33,.27,.16,'#9aaab2')+e(.36,.4,.21,.14,'#aabac2')+e(.65,.42,.18,.13,'#a2b2ba')+e(.5,.48,.35,.13,'#96a8b2')+
-    l(.3,.67,.24,.8,'#5888b8',.05)+l(.45,.65,.39,.78,'#5888b8',.05)+l(.6,.66,.54,.79,'#5888b8',.05)+l(.72,.64,.66,.77,'#5888b8',.05)+'</svg>';
+      li(.3,.67,.24,.8,'#5888b8',.05)+li(.45,.65,.39,.78,'#5888b8',.05)+li(.6,.66,.54,.79,'#5888b8',.05)+li(.72,.64,.66,.77,'#5888b8',.05)+'</svg>';
   }
   if(code>=71&&code<=77){
     return t+e(.52,.35,.27,.16,'#c0d2e2')+e(.36,.42,.2,.14,'#ccdde8')+e(.65,.44,.18,.13,'#c4d8e4')+e(.5,.5,.35,.13,'#bcd0e0')+
-    '<circle cx="'+(s*.3)+'" cy="'+(s*.71)+'" r="'+(s*.04)+'" fill="#88aad0"/><circle cx="'+(s*.46)+'" cy="'+(s*.75)+'" r="'+(s*.035)+'" fill="#88aad0"/><circle cx="'+(s*.61)+'" cy="'+(s*.72)+'" r="'+(s*.04)+'" fill="#88aad0"/><circle cx="'+(s*.73)+'" cy="'+(s*.76)+'" r="'+(s*.035)+'" fill="#88aad0"/></svg>';
+      '<circle cx="'+(s*.3).toFixed(1)+'" cy="'+(s*.71).toFixed(1)+'" r="'+(s*.04).toFixed(1)+'" fill="#88aad0"/>'+
+      '<circle cx="'+(s*.46).toFixed(1)+'" cy="'+(s*.75).toFixed(1)+'" r="'+(s*.035).toFixed(1)+'" fill="#88aad0"/>'+
+      '<circle cx="'+(s*.62).toFixed(1)+'" cy="'+(s*.72).toFixed(1)+'" r="'+(s*.04).toFixed(1)+'" fill="#88aad0"/>'+
+      '<circle cx="'+(s*.74).toFixed(1)+'" cy="'+(s*.76).toFixed(1)+'" r="'+(s*.035).toFixed(1)+'" fill="#88aad0"/></svg>';
   }
   if(code>=95){
     return t+e(.52,.31,.27,.16,'#787878')+e(.36,.38,.21,.14,'#888')+e(.5,.46,.35,.13,'#7a7a7a')+
-    '<polygon points="'+(s*.5)+','+(s*.55)+' '+(s*.41)+','+(s*.72)+' '+(s*.49)+','+(s*.69)+' '+(s*.44)+','+(s*.87)+' '+(s*.61)+','+(s*.66)+' '+(s*.51)+','+(s*.69)+'" fill="#f5c320"/></svg>';
+      '<polygon points="'+(s*.5)+','+(s*.55)+' '+(s*.41)+','+(s*.72)+' '+(s*.49)+','+(s*.69)+' '+(s*.44)+','+(s*.87)+' '+(s*.61)+','+(s*.66)+' '+(s*.51)+','+(s*.69)+'" fill="#f5c320"/></svg>';
   }
   return t+e(.52,.4,.27,.17,'#aabac2')+e(.37,.47,.21,.15,'#bac8d0')+e(.65,.49,.18,.13,'#b2c2ca')+e(.5,.55,.35,.14,'#b0c0ca')+'</svg>';
 }
 
-function desc(c){
-  if(c===0)return'Sonnig';if(c===1)return'Meist sonnig';if(c===2)return'Teilweise bewölkt';
-  if(c===3)return'Bedeckt';if(c>=45&&c<=48)return'Nebelig';if(c>=51&&c<=55)return'Nieselregen';
-  if(c>=61&&c<=67)return'Regen';if(c>=71&&c<=77)return'Schneefall';
-  if(c>=80&&c<=82)return'Regenschauer';if(c>=95)return'Gewitter';return'Bewölkt';
+function wDesc(c){
+  if(c===0)return'Sonnig'; if(c===1)return'Meist sonnig'; if(c===2)return'Teilweise bewölkt';
+  if(c===3)return'Bedeckt'; if(c>=45&&c<=48)return'Nebelig'; if(c>=51&&c<=55)return'Nieselregen';
+  if(c>=61&&c<=67)return'Regen'; if(c>=71&&c<=77)return'Schneefall';
+  if(c>=80&&c<=82)return'Regenschauer'; if(c>=95)return'Gewitter'; return'Bewölkt';
 }
 
+// ── Wetter laden ──
+var isOnline = navigator.onLine;
+function setStatus(online){
+  isOnline=online;
+  var dot=document.getElementById('statusDot'), txt=document.getElementById('statusTxt');
+  if(online){
+    dot.className='status-dot'; dot.style.background='#22c55e'; dot.style.boxShadow='0 0 6px rgba(34,197,94,0.7)';
+    txt.textContent='Live';
+  } else {
+    dot.className='status-dot offline'; dot.style.background='#ef4444'; dot.style.boxShadow='0 0 6px rgba(239,68,68,0.7)';
+    txt.textContent='Offline';
+  }
+}
+window.addEventListener('online',  function(){ setStatus(true);  loadWeather(); });
+window.addEventListener('offline', function(){ setStatus(false); });
+setStatus(navigator.onLine);
+
 function loadWeather(){
-  fetch('https://api.open-meteo.com/v1/forecast?latitude=51.20&longitude=9.7167&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FBerlin&forecast_days=5')
-  .then(function(r){return r.json();})
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=51.20&longitude=9.7167&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FBerlin&forecast_days=5')
+  .then(function(r){ return r.json(); })
   .then(function(d){
+    setStatus(true);
     var c=d.current, daily=d.daily;
     document.getElementById('wTemp').textContent = Math.round(c.temperature_2m);
-    document.getElementById('wDesc').textContent = desc(c.weather_code);
-    document.getElementById('wIcon').innerHTML = svg(c.weather_code,95);
-    var now=new Date();
-    document.getElementById('liveLabel').textContent='Stand '+p(now.getHours())+':'+p(now.getMinutes());
+    document.getElementById('wDesc').textContent = wDesc(c.weather_code);
+    document.getElementById('wIcon').innerHTML   = wSVG(c.weather_code, 95);
+    // Forecast: 4 Tage ab morgen
     var g=document.getElementById('fcGrid'); g.innerHTML='';
     for(var i=1;i<=4;i++){
       var dt=new Date(); dt.setDate(dt.getDate()+i);
       g.innerHTML+='<div class="fc-col">'+
         '<div class="fc-name">'+DAYS_S[dt.getDay()]+'</div>'+
-        '<div class="fc-ico">'+svg(daily.weather_code[i],40)+'</div>'+
+        '<div class="fc-ico">'+wSVG(daily.weather_code[i],40)+'</div>'+
         '<div class="fc-hi">'+Math.round(daily.temperature_2m_max[i])+'°</div>'+
         '<div class="fc-lo">'+Math.round(daily.temperature_2m_min[i])+'°</div>'+
         '</div>';
     }
-  }).catch(function(e){console.error('Wetter:',e);});
+  })
+  .catch(function(){ setStatus(false); });
 }
-loadWeather(); setInterval(loadWeather,30*60*1000);
+loadWeather(); setInterval(loadWeather, 30*60*1000);
 </script>
 </body>
 </html>
