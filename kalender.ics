@@ -642,26 +642,21 @@ CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:47206397
-DTSTAMP:20260507T060033Z
+DTSTAMP:20260512T122118Z
 DTSTART;TZID=Europe/Berlin:20260514T110000
 DTEND;TZID=Europe/Berlin:20260514T120000
 SUMMARY:Himmelfahrtsgottesdienst in Günsterode
-SEQUENCE:96035571
-LOCATION:Schutzhütte Günsterode\, 3212 Melsungen-Günsterode
-DESCRIPTION:Am Donnerstag\, den 14. Mai\, laden wir herzlich ein\, gemeinsa
- m in unserem Kooperationsraum den Himmelfahrtsgottesdienst an der Schutzh
- ütte in Günsterode zu feiern.\n\nInmitten der Natur wollen wir um 11:00 
- Uhr zusammenkommen\, Gott danken\, singen und Gemeinschaft erleben. Musika
- lisch begleitet wird der Gottesdienst vom Ev. Bläserkreis Hessisch Lichte
- nau.\n\nIm Anschluss an den Gottesdienst ist Zeit für ein gemütliches Be
- isammensein. Bei Gegrilltem und kalten Getränken möchten wir noch verwei
- len\, ins Gespräch kommen und die Gemeinschaft genießen. Unterstützt we
- rden wir dabei dankenswerterweise von der Freiwilligen Feuerwehr Günstero
- de.\n\nOb jung oder alt\, allein oder mit Familie: Alle sind herzlich will
- kommen.\n\nBringen Sie gern gute Laune\, Hunger und Freude an Gemeinschaft
-  mit. Wir freuen uns auf einen schönen Himmelfahrtstag miteinander.\n\n\n
- \n\n\nMitwirkender: Pfarrer Dominik Teminski und Ev. Bläserkreis Hessisch
-  Lichtenau\n\nEreignis-URL: https://landing.churchdesk.com/de/e/47206397
+SEQUENCE:96182926
+LOCATION:Kirche Günsterode\, Laudenbachstr. 12\, 34212 Melsungen
+DESCRIPTION:Aufgrund der aktuellen Wetterlage\, findet der Himmelfahrts-Got
+ tesdienst am Donnerstag\, 14. Mai um 11 Uhr nicht an der Schutzhütte\n\ns
+ ondern in der St. Andreas Kirche in Günsterode statt.\n\nMusikalisch begl
+ eitet wird der Gottesdienst vom Ev. Bläserkreis Hessisch Lichtenau.\n\nWi
+ r freuen uns auf eine schöne gemeinsame Zeit und laden herzlich dazu ein.
+ \n\nPfarrer Dominik Teminski und die Ev. Kirchengemeinde Günsterode.\n\n\
+ n\n\n\n\n\nMitwirkender: Pfarrer Dominik Teminski und Ev. Bläserkreis Hes
+ sisch Lichtenau\n\nEreignis-URL: https://landing.churchdesk.com/de/e/47206
+ 397
 URL;VALUE=URI:https://landing.churchdesk.com/de/e/47206397
 STATUS:CONFIRMED
 CATEGORIES:Gottesdienst
