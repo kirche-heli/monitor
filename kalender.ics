@@ -538,21 +538,6 @@ STATUS:CONFIRMED
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
-UID:47204700
-DTSTAMP:20260304T074602Z
-DTSTART;TZID=Europe/Berlin:20260315T103000
-DTEND;TZID=Europe/Berlin:20260315T113000
-SUMMARY:Gottesdienst in Hessisch Lichtenau
-SEQUENCE:94245070
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
- nding.churchdesk.com/de/e/47204700
-URL;VALUE=URI:https://landing.churchdesk.com/de/e/47204700
-STATUS:CONFIRMED
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
 UID:47204929
 DTSTAMP:20260304T075711Z
 DTSTART;TZID=Europe/Berlin:20260322T103000
