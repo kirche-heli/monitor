@@ -1678,4 +1678,22 @@ URL;VALUE=URI:https://landing.churchdesk.com/de/e/48813011
 STATUS:CONFIRMED
 CATEGORIES:Besprechung
 END:VEVENT
+BEGIN:VEVENT
+UID:48813012
+DTSTAMP:20260513T062226Z
+DTSTART;TZID=Europe/Berlin:20270519T190000
+DTEND;TZID=Europe/Berlin:20270519T210000
+SUMMARY:EFA-Gruppe
+SEQUENCE:96199803
+LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
+DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
+ ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
+ der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
+ n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
+ nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
+ ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813012
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/48813012
+STATUS:CONFIRMED
+CATEGORIES:Besprechung
+END:VEVENT
 END:VCALENDAR
