@@ -26,19 +26,6 @@ END:VTIMEZONE
 X-PUBLISHED-TTL:PT15M
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 BEGIN:VEVENT
-UID:36163919
-DTSTAMP:20250105T201508Z
-DTSTART;TZID=Europe/Berlin:20260914T090000
-DTEND;TZID=Europe/Berlin:20260914T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106267
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163919
-URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163919
-STATUS:CONFIRMED
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
 UID:36163920
 DTSTAMP:20250105T201508Z
 DTSTART;TZID=Europe/Berlin:20260907T090000
@@ -853,6 +840,50 @@ STATUS:CONFIRMED
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
+UID:49738939
+DTSTAMP:20260520T081626Z
+DTSTART;TZID=Europe/Berlin:20260607T100000
+DTEND;TZID=Europe/Berlin:20260607T110000
+SUMMARY:Ökumenischer Gottesdienst zum Altstadtfest in Hessich Lichtenau
+SEQUENCE:96374640
+LOCATION:"Am Untertor"\, 37235 Hessisch Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\, Pfarrer Kovacs\n\nErei
+ gnis-URL: https://landing.churchdesk.com/de/e/49738939
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/49738939
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:49738990
+DTSTAMP:20260520T082104Z
+DTSTART;TZID=Europe/Berlin:20260614T103000
+DTEND;TZID=Europe/Berlin:20260614T113000
+SUMMARY:Abendmahls-Gottesdienst in Hessisch Lichtenau
+SEQUENCE:96374960
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https:/
+ /landing.churchdesk.com/de/e/49738990
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/49738990
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:49742213
+DTSTAMP:20260520T082616Z
+DTSTART;TZID=Europe/Berlin:20260621T103000
+DTEND;TZID=Europe/Berlin:20260621T113000
+SUMMARY:Gottesdienst in Hessisch Lichtenau
+SEQUENCE:96375507
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Mitwirkender: Lektorin Prisca Kaufhold-Freitag\n\nEreignis-URL:
+  https://landing.churchdesk.com/de/e/49742213
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/49742213
+STATUS:CONFIRMED
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
 UID:36163912
 DTSTAMP:20250105T201508Z
 DTSTART;TZID=Europe/Berlin:20261102T090000
@@ -940,6 +971,19 @@ SEQUENCE:83106268
 LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
 DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163918
 URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163918
+STATUS:CONFIRMED
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:36163919
+DTSTAMP:20250105T201508Z
+DTSTART;TZID=Europe/Berlin:20260914T090000
+DTEND;TZID=Europe/Berlin:20260914T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106267
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163919
+URL;VALUE=URI:https://landing.churchdesk.com/de/e/36163919
 STATUS:CONFIRMED
 CATEGORIES:Kinder & Familien
 END:VEVENT
