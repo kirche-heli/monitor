@@ -25,6 +25,20 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:36163918
+DTSTAMP:20260522T043814Z
+DTSTART;TZID=Europe/Berlin:20260921T090000
+DTEND;TZID=Europe/Berlin:20260921T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106268
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163918
+URL:https://landing.churchdesk.com/de/e/36163918
+STATUS:CONFIRMED
+LAST-MODIFIED:20250105T201508Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:36163919
 DTSTAMP:20260522T043814Z
 DTSTART;TZID=Europe/Berlin:20260914T090000
@@ -569,23 +583,6 @@ LAST-MODIFIED:20260107T090941Z
 CATEGORIES:Senioren
 END:VEVENT
 BEGIN:VEVENT
-UID:46666075
-DTSTAMP:20260522T043814Z
-DTSTART;TZID=Europe/Berlin:20260322T140000
-DTEND;TZID=Europe/Berlin:20260322T150000
-SUMMARY:Gottesdienst zur Einführung von Pfarrer Dominik Teminski
-SEQUENCE:94245374
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Mitwirkender: Dekan Ralph Beyer\, Pfarrerin Anja Peters\, Kirch
- envorstände Hessisch Lichtenau und Günsterode\n\nEreignis-URL: https://l
- anding.churchdesk.com/de/e/46666075
-URL:https://landing.churchdesk.com/de/e/46666075
-STATUS:CONFIRMED
-LAST-MODIFIED:20260304T075551Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
 UID:46666482
 DTSTAMP:20260522T043814Z
 DTSTART;TZID=Europe/Berlin:20260404T100000
@@ -600,22 +597,6 @@ DESCRIPTION:Gemeinsam singen\, lachen\, beten:\n\nGott freut sich\, wenn wi
 URL:https://landing.churchdesk.com/de/e/46666482
 STATUS:CONFIRMED
 LAST-MODIFIED:20260304T084147Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
-UID:47204929
-DTSTAMP:20260522T043814Z
-DTSTART;TZID=Europe/Berlin:20260322T103000
-DTEND;TZID=Europe/Berlin:20260322T113000
-SUMMARY:Tauf-Gottesdienst in Hessisch Lichtenau
-SEQUENCE:94245407
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
- nding.churchdesk.com/de/e/47204929
-URL:https://landing.churchdesk.com/de/e/47204929
-STATUS:CONFIRMED
-LAST-MODIFIED:20260304T075711Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
@@ -1055,20 +1036,6 @@ SEQUENCE:83106270
 LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
 DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163917
 URL:https://landing.churchdesk.com/de/e/36163917
-STATUS:CONFIRMED
-LAST-MODIFIED:20250105T201508Z
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
-UID:36163918
-DTSTAMP:20260522T043814Z
-DTSTART;TZID=Europe/Berlin:20260921T090000
-DTEND;TZID=Europe/Berlin:20260921T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106268
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163918
-URL:https://landing.churchdesk.com/de/e/36163918
 STATUS:CONFIRMED
 LAST-MODIFIED:20250105T201508Z
 CATEGORIES:Kinder & Familien
