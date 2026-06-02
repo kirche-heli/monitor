@@ -25,6 +25,20 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:36163916
+DTSTAMP:20260602T100722Z
+DTSTART;TZID=Europe/Berlin:20260928T090000
+DTEND;TZID=Europe/Berlin:20260928T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106269
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163916
+URL:https://landing.churchdesk.com/de/e/36163916
+STATUS:CONFIRMED
+LAST-MODIFIED:20250105T201508Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:36163918
 DTSTAMP:20260602T100722Z
 DTSTART;TZID=Europe/Berlin:20260921T090000
@@ -554,22 +568,6 @@ DESCRIPTION:Gemeinsam singen\, lachen\, beten:\n\nGott freut sich\, wenn wi
 URL:https://landing.churchdesk.com/de/e/46666482
 STATUS:CONFIRMED
 LAST-MODIFIED:20260304T084147Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
-UID:47205146
-DTSTAMP:20260602T100722Z
-DTSTART;TZID=Europe/Berlin:20260402T180000
-DTEND;TZID=Europe/Berlin:20260402T190000
-SUMMARY:Abendmahls-Gottesdienst in Hessisch Lichtenau
-SEQUENCE:94245795
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https:/
- /landing.churchdesk.com/de/e/47205146
-URL:https://landing.churchdesk.com/de/e/47205146
-STATUS:CONFIRMED
-LAST-MODIFIED:20260304T081202Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
@@ -1163,20 +1161,6 @@ SEQUENCE:83106271
 LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
 DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163915
 URL:https://landing.churchdesk.com/de/e/36163915
-STATUS:CONFIRMED
-LAST-MODIFIED:20250105T201508Z
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
-UID:36163916
-DTSTAMP:20260602T100722Z
-DTSTART;TZID=Europe/Berlin:20260928T090000
-DTEND;TZID=Europe/Berlin:20260928T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106269
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163916
-URL:https://landing.churchdesk.com/de/e/36163916
 STATUS:CONFIRMED
 LAST-MODIFIED:20250105T201508Z
 CATEGORIES:Kinder & Familien
