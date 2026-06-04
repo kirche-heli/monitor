@@ -498,6 +498,21 @@ LAST-MODIFIED:20260107T090516Z
 CATEGORIES:Geselligkeit
 END:VEVENT
 BEGIN:VEVENT
+UID:44765037
+DTSTAMP:20260604T010817Z
+DTSTART;TZID=Europe/Berlin:20260930T170000
+DTEND;TZID=Europe/Berlin:20260930T190000
+SUMMARY:Spiele-Abend
+SEQUENCE:92360159
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765037
+URL:https://landing.churchdesk.com/de/e/44765037
+STATUS:CONFIRMED
+LAST-MODIFIED:20260107T090516Z
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
 UID:44765860
 DTSTAMP:20260604T010817Z
 DTSTART;TZID=Europe/Berlin:20260408T143000
@@ -552,23 +567,6 @@ URL:https://landing.churchdesk.com/de/e/44765865
 STATUS:CONFIRMED
 LAST-MODIFIED:20260107T090941Z
 CATEGORIES:Senioren
-END:VEVENT
-BEGIN:VEVENT
-UID:46666482
-DTSTAMP:20260604T010817Z
-DTSTART;TZID=Europe/Berlin:20260404T100000
-DTEND;TZID=Europe/Berlin:20260404T110000
-SUMMARY:Kindergottesdienst in Hessisch Lichtenau
-SEQUENCE:94247247
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Gemeinsam singen\, lachen\, beten:\n\nGott freut sich\, wenn wi
- r zusammen sind.\n\nAlle Kinder sind herzlich eingeladen.\n\n\n\nMitwirken
- der: Lektorin Prisca Kaufhold-Freitag\n\nEreignis-URL: https://landing.chu
- rchdesk.com/de/e/46666482
-URL:https://landing.churchdesk.com/de/e/46666482
-STATUS:CONFIRMED
-LAST-MODIFIED:20260304T084147Z
-CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:47205314
@@ -1593,21 +1591,6 @@ URL:https://landing.churchdesk.com/de/e/39405623
 STATUS:CONFIRMED
 LAST-MODIFIED:20250531T140421Z
 CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
-UID:44765037
-DTSTAMP:20260604T010817Z
-DTSTART;TZID=Europe/Berlin:20260930T170000
-DTEND;TZID=Europe/Berlin:20260930T190000
-SUMMARY:Spiele-Abend
-SEQUENCE:92360159
-LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
- u
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765037
-URL:https://landing.churchdesk.com/de/e/44765037
-STATUS:CONFIRMED
-LAST-MODIFIED:20260107T090516Z
-CATEGORIES:Geselligkeit
 END:VEVENT
 BEGIN:VEVENT
 UID:44765038
