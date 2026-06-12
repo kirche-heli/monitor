@@ -405,24 +405,6 @@ LAST-MODIFIED:20260513T065915Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
-UID:38119954
-DTSTAMP:20260612T084800Z
-DTSTART;TZID=Europe/Berlin:20260412T100000
-DTEND;TZID=Europe/Berlin:20260412T113000
-SUMMARY:Konfirmation mit Abendmahl in Hessisch Lichtenau
-SEQUENCE:95054197
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Konfirmation der Konfirmanden aus der Gruppe von Pfarrerin Anja
-  Peters\n\nAbendmahlsfeier mit Oblaten und Wein (Intinctio)\n\n\n\nMitwirk
- ender: Pfarrerin Anja Peters\n\nEreignis-URL: https://landing.churchdesk.c
- om/de/e/38119954
-URL:https://landing.churchdesk.com/de/e/38119954
-STATUS:CONFIRMED
-LAST-MODIFIED:20260330T102515Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
 UID:39542454
 DTSTAMP:20260612T084800Z
 DTSTART;TZID=Europe/Berlin:20260715T090000
