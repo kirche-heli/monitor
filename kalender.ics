@@ -587,24 +587,6 @@ LAST-MODIFIED:20260512T122118Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
-UID:47746454
-DTSTAMP:20260619T010920Z
-DTSTART;TZID=Europe/Berlin:20260419T100000
-DTEND;TZID=Europe/Berlin:20260419T113000
-SUMMARY:Konfirmation mit Abendmahl in Hessisch Lichtenau
-SEQUENCE:95054193
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Konfirmation der Konfirmanden aus der Gruppe von Pfarrer Domini
- k Teminski\n\nAbendmahlsfeier mit Oblaten und Wein (Intinctio)\n\n\n\nMitw
- irkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https://landing.church
- desk.com/de/e/47746454
-URL:https://landing.churchdesk.com/de/e/47746454
-STATUS:CONFIRMED
-LAST-MODIFIED:20260330T102459Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
 UID:47746571
 DTSTAMP:20260619T010920Z
 DTSTART;TZID=Europe/Berlin:20260426T103000
