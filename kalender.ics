@@ -347,20 +347,6 @@ LAST-MODIFIED:20250105T201507Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
-UID:36163935
-DTSTAMP:20260723T082412Z
-DTSTART;TZID=Europe/Berlin:20260525T090000
-DTEND;TZID=Europe/Berlin:20260525T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106251
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163935
-URL:https://landing.churchdesk.com/de/e/36163935
-STATUS:CONFIRMED
-LAST-MODIFIED:20250105T201507Z
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
 UID:36184616
 DTSTAMP:20260723T082412Z
 DTSTART;TZID=Europe/Berlin:20261109T090000
@@ -888,23 +874,6 @@ URL:https://landing.churchdesk.com/de/e/48813005
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062225Z
 CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
-UID:48813675
-DTSTAMP:20260723T082412Z
-DTSTART;TZID=Europe/Berlin:20260525T170000
-DTEND;TZID=Europe/Berlin:20260525T180000
-SUMMARY:Ökumenischer Gottesdienst in Hessisch Lichtenau
-SEQUENCE:96200746
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:anschl. Beisammensein mit kleinem Imbiss in der Kirche\n\n\n\nM
- itwirkender: Pfarrer Dominik Teminski\, Pfarrer Istvan Kovacs u.a.\n\nErei
- gnis-URL: https://landing.churchdesk.com/de/e/48813675
-URL:https://landing.churchdesk.com/de/e/48813675
-STATUS:CONFIRMED
-LAST-MODIFIED:20260513T065613Z
-CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:49738939
@@ -1544,6 +1513,20 @@ DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/40247275
 URL:https://landing.churchdesk.com/de/e/40247275
 STATUS:CONFIRMED
 LAST-MODIFIED:20250719T140513Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
+UID:40434557
+DTSTAMP:20260723T082412Z
+DTSTART;TZID=Europe/Berlin:20270726T090000
+DTEND;TZID=Europe/Berlin:20270726T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:87852574
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/40434557
+URL:https://landing.churchdesk.com/de/e/40434557
+STATUS:CONFIRMED
+LAST-MODIFIED:20250726T140548Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
