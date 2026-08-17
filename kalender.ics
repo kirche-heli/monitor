@@ -361,6 +361,20 @@ LAST-MODIFIED:20250105T201509Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
+UID:36626737
+DTSTAMP:20260814T090406Z
+DTSTART;TZID=Europe/Berlin:20261207T090000
+DTEND;TZID=Europe/Berlin:20261207T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106279
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36626737
+URL:https://landing.churchdesk.com/de/e/36626737
+STATUS:CONFIRMED
+LAST-MODIFIED:20250105T201509Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:39542454
 DTSTAMP:20260814T090406Z
 DTSTART;TZID=Europe/Berlin:20260715T090000
@@ -736,25 +750,6 @@ LAST-MODIFIED:20260513T060642Z
 CATEGORIES:Senioren
 END:VEVENT
 BEGIN:VEVENT
-UID:48812998
-DTSTAMP:20260814T090406Z
-DTSTART;TZID=Europe/Berlin:20260617T190000
-DTEND;TZID=Europe/Berlin:20260617T210000
-SUMMARY:EFA-Gruppe
-SEQUENCE:96199788
-LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
-DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
- ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
- der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
- n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
- nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
- ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48812998
-URL:https://landing.churchdesk.com/de/e/48812998
-STATUS:CONFIRMED
-LAST-MODIFIED:20260513T062220Z
-CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
 UID:48812999
 DTSTAMP:20260814T090406Z
 DTSTART;TZID=Europe/Berlin:20260715T190000
@@ -991,20 +986,6 @@ URL:https://landing.churchdesk.com/de/e/54070876
 STATUS:CONFIRMED
 LAST-MODIFIED:20260804T094215Z
 CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
-UID:36626737
-DTSTAMP:20260814T090406Z
-DTSTART;TZID=Europe/Berlin:20261207T090000
-DTEND;TZID=Europe/Berlin:20261207T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106279
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36626737
-URL:https://landing.churchdesk.com/de/e/36626737
-STATUS:CONFIRMED
-LAST-MODIFIED:20250105T201509Z
-CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
 UID:36716924
@@ -1915,6 +1896,25 @@ DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
  nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
  ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813014
 URL:https://landing.churchdesk.com/de/e/48813014
+STATUS:CONFIRMED
+LAST-MODIFIED:20260513T062226Z
+CATEGORIES:Besprechung
+END:VEVENT
+BEGIN:VEVENT
+UID:48813015
+DTSTAMP:20260814T090406Z
+DTSTART;TZID=Europe/Berlin:20270818T190000
+DTEND;TZID=Europe/Berlin:20270818T210000
+SUMMARY:EFA-Gruppe
+SEQUENCE:96199806
+LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
+DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
+ ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
+ der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
+ n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
+ nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
+ ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813015
+URL:https://landing.churchdesk.com/de/e/48813015
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062226Z
 CATEGORIES:Besprechung
