@@ -139,6 +139,25 @@ LAST-MODIFIED:20260728T110107Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
+UID:48084233
+DTSTAMP:20260908T090138Z
+DTSTART;TZID=Europe/Berlin:20260816T193000
+DTEND;TZID=Europe/Berlin:20260816T203000
+SUMMARY:Paul Gerhard Gottesdienst in Hessisch Lichtenau
+SEQUENCE:98599970
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Ein musikalischer Gottesdienst zum Mitsingen der bekanntesten L
+ ieder Paul Gerhardts.\n\nEin Abend\, an dem Melodien und Worte tragen und 
+ verbinden.\n\n\n\nMitwirkender: Pfarrer Dominik Teminski\, Ev. Bläserkrei
+ s\, Erich Schröder (Orgel)\n\nEreignis-URL: https://landing.churchdesk.co
+ m/de/e/48084233
+URL:https://landing.churchdesk.com/de/e/48084233
+STATUS:CONFIRMED
+LAST-MODIFIED:20260804T092420Z
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
 UID:48269816
 DTSTAMP:20260908T090138Z
 DTSTART;TZID=Europe/Berlin:20260726T140000
@@ -227,20 +246,6 @@ URL:https://landing.churchdesk.com/de/e/48269822
 STATUS:CONFIRMED
 LAST-MODIFIED:20260526T090500Z
 CATEGORIES:Andachten
-END:VEVENT
-BEGIN:VEVENT
-UID:48812927
-DTSTAMP:20260908T090138Z
-DTSTART;TZID=Europe/Berlin:20260708T143000
-DTEND;TZID=Europe/Berlin:20260708T163000
-SUMMARY:Seniorennachmittag
-SEQUENCE:96198862
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/48812927
-URL:https://landing.churchdesk.com/de/e/48812927
-STATUS:CONFIRMED
-LAST-MODIFIED:20260513T060642Z
-CATEGORIES:Senioren
 END:VEVENT
 BEGIN:VEVENT
 UID:48812999
@@ -451,25 +456,6 @@ URL:https://landing.churchdesk.com/de/e/44765865
 STATUS:CONFIRMED
 LAST-MODIFIED:20260107T090941Z
 CATEGORIES:Senioren
-END:VEVENT
-BEGIN:VEVENT
-UID:48084233
-DTSTAMP:20260908T090138Z
-DTSTART;TZID=Europe/Berlin:20260816T193000
-DTEND;TZID=Europe/Berlin:20260816T203000
-SUMMARY:Paul Gerhard Gottesdienst in Hessisch Lichtenau
-SEQUENCE:98599970
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Ein musikalischer Gottesdienst zum Mitsingen der bekanntesten L
- ieder Paul Gerhardts.\n\nEin Abend\, an dem Melodien und Worte tragen und 
- verbinden.\n\n\n\nMitwirkender: Pfarrer Dominik Teminski\, Ev. Bläserkrei
- s\, Erich Schröder (Orgel)\n\nEreignis-URL: https://landing.churchdesk.co
- m/de/e/48084233
-URL:https://landing.churchdesk.com/de/e/48084233
-STATUS:CONFIRMED
-LAST-MODIFIED:20260804T092420Z
-CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:48269821
