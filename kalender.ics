@@ -39,35 +39,18 @@ LAST-MODIFIED:20250105T201507Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
-UID:48269817
+UID:36163922
 DTSTAMP:20260911T094602Z
-DTSTART;TZID=Europe/Berlin:20260712T140000
-DTEND;TZID=Europe/Berlin:20260712T160000
-SUMMARY:offene Stadtkirche
-SEQUENCE:96513325
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/48269817
-URL:https://landing.churchdesk.com/de/e/48269817
+DTSTART;TZID=Europe/Berlin:20260824T090000
+DTEND;TZID=Europe/Berlin:20260824T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106264
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163922
+URL:https://landing.churchdesk.com/de/e/36163922
 STATUS:CONFIRMED
-LAST-MODIFIED:20260526T090459Z
-CATEGORIES:Andachten
-END:VEVENT
-BEGIN:VEVENT
-UID:51240428
-DTSTAMP:20260911T094602Z
-DTSTART;TZID=Europe/Berlin:20260712T103000
-DTEND;TZID=Europe/Berlin:20260712T113000
-SUMMARY:Tauf-Gottesdienst in Hessisch Lichtenau
-SEQUENCE:97451269
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\n\nEreignis-URL: https:/
- /landing.churchdesk.com/de/e/51240428
-URL:https://landing.churchdesk.com/de/e/51240428
-STATUS:CONFIRMED
-LAST-MODIFIED:20260624T065652Z
-CATEGORIES:Gottesdienst
+LAST-MODIFIED:20250105T201508Z
+CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
 UID:36163923
@@ -260,6 +243,21 @@ DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/48269820
 URL:https://landing.churchdesk.com/de/e/48269820
 STATUS:CONFIRMED
 LAST-MODIFIED:20260526T090459Z
+CATEGORIES:Andachten
+END:VEVENT
+BEGIN:VEVENT
+UID:48269821
+DTSTAMP:20260911T094602Z
+DTSTART;TZID=Europe/Berlin:20260823T140000
+DTEND;TZID=Europe/Berlin:20260823T160000
+SUMMARY:offene Stadtkirche
+SEQUENCE:96513332
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/48269821
+URL:https://landing.churchdesk.com/de/e/48269821
+STATUS:CONFIRMED
+LAST-MODIFIED:20260526T090500Z
 CATEGORIES:Andachten
 END:VEVENT
 BEGIN:VEVENT
@@ -464,20 +462,6 @@ LAST-MODIFIED:20250105T201508Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
-UID:36163922
-DTSTAMP:20260911T094602Z
-DTSTART;TZID=Europe/Berlin:20260824T090000
-DTEND;TZID=Europe/Berlin:20260824T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106264
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163922
-URL:https://landing.churchdesk.com/de/e/36163922
-STATUS:CONFIRMED
-LAST-MODIFIED:20250105T201508Z
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
 UID:44765034
 DTSTAMP:20260911T094602Z
 DTSTART;TZID=Europe/Berlin:20260826T170000
@@ -488,6 +472,21 @@ LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
  u
 DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765034
 URL:https://landing.churchdesk.com/de/e/44765034
+STATUS:CONFIRMED
+LAST-MODIFIED:20260107T090516Z
+CATEGORIES:Geselligkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:44765037
+DTSTAMP:20260911T094602Z
+DTSTART;TZID=Europe/Berlin:20260930T170000
+DTEND;TZID=Europe/Berlin:20260930T190000
+SUMMARY:Spiele-Abend
+SEQUENCE:92360159
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765037
+URL:https://landing.churchdesk.com/de/e/44765037
 STATUS:CONFIRMED
 LAST-MODIFIED:20260107T090516Z
 CATEGORIES:Geselligkeit
@@ -505,21 +504,6 @@ URL:https://landing.churchdesk.com/de/e/44765865
 STATUS:CONFIRMED
 LAST-MODIFIED:20260107T090941Z
 CATEGORIES:Senioren
-END:VEVENT
-BEGIN:VEVENT
-UID:48269821
-DTSTAMP:20260911T094602Z
-DTSTART;TZID=Europe/Berlin:20260823T140000
-DTEND;TZID=Europe/Berlin:20260823T160000
-SUMMARY:offene Stadtkirche
-SEQUENCE:96513332
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/48269821
-URL:https://landing.churchdesk.com/de/e/48269821
-STATUS:CONFIRMED
-LAST-MODIFIED:20260526T090500Z
-CATEGORIES:Andachten
 END:VEVENT
 BEGIN:VEVENT
 UID:48269823
@@ -702,21 +686,6 @@ URL:https://landing.churchdesk.com/de/e/36326533
 STATUS:CONFIRMED
 LAST-MODIFIED:20250105T201508Z
 CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
-UID:44765037
-DTSTAMP:20260911T094602Z
-DTSTART;TZID=Europe/Berlin:20260930T170000
-DTEND;TZID=Europe/Berlin:20260930T190000
-SUMMARY:Spiele-Abend
-SEQUENCE:92360159
-LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
- u
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765037
-URL:https://landing.churchdesk.com/de/e/44765037
-STATUS:CONFIRMED
-LAST-MODIFIED:20260107T090516Z
-CATEGORIES:Geselligkeit
 END:VEVENT
 BEGIN:VEVENT
 UID:44765038
@@ -1159,6 +1128,20 @@ LAST-MODIFIED:20250322T150322Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
+UID:38598907
+DTSTAMP:20260911T094602Z
+DTSTART;TZID=Europe/Berlin:20270329T090000
+DTEND;TZID=Europe/Berlin:20270329T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:85403059
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38598907
+URL:https://landing.churchdesk.com/de/e/38598907
+STATUS:CONFIRMED
+LAST-MODIFIED:20250329T150348Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:44765040
 DTSTAMP:20260911T094602Z
 DTSTART;TZID=Europe/Berlin:20270224T170000
@@ -1253,20 +1236,6 @@ URL:https://landing.churchdesk.com/de/e/48813010
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062226Z
 CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
-UID:38598907
-DTSTAMP:20260911T094602Z
-DTSTART;TZID=Europe/Berlin:20270329T090000
-DTEND;TZID=Europe/Berlin:20270329T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:85403059
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/38598907
-URL:https://landing.churchdesk.com/de/e/38598907
-STATUS:CONFIRMED
-LAST-MODIFIED:20250329T150348Z
-CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
 UID:38712228
@@ -1548,6 +1517,25 @@ LAST-MODIFIED:20260513T062226Z
 CATEGORIES:Besprechung
 END:VEVENT
 BEGIN:VEVENT
+UID:48813013
+DTSTAMP:20260911T094602Z
+DTSTART;TZID=Europe/Berlin:20270616T190000
+DTEND;TZID=Europe/Berlin:20270616T210000
+SUMMARY:EFA-Gruppe
+SEQUENCE:96199805
+LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
+DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
+ ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
+ der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
+ n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
+ nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
+ ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813013
+URL:https://landing.churchdesk.com/de/e/48813013
+STATUS:CONFIRMED
+LAST-MODIFIED:20260513T062226Z
+CATEGORIES:Besprechung
+END:VEVENT
+BEGIN:VEVENT
 UID:39674508
 DTSTAMP:20260911T094602Z
 DTSTART;TZID=Europe/Berlin:20270621T090000
@@ -1716,6 +1704,20 @@ LAST-MODIFIED:20250906T140617Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
+UID:41512975
+DTSTAMP:20260911T094602Z
+DTSTART;TZID=Europe/Berlin:20270913T090000
+DTEND;TZID=Europe/Berlin:20270913T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:88991919
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/41512975
+URL:https://landing.churchdesk.com/de/e/41512975
+STATUS:CONFIRMED
+LAST-MODIFIED:20250913T140627Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:44765046
 DTSTAMP:20260911T094602Z
 DTSTART;TZID=Europe/Berlin:20270630T170000
@@ -1801,25 +1803,6 @@ URL:https://landing.churchdesk.com/de/e/44765878
 STATUS:CONFIRMED
 LAST-MODIFIED:20260107T090942Z
 CATEGORIES:Senioren
-END:VEVENT
-BEGIN:VEVENT
-UID:48813013
-DTSTAMP:20260911T094602Z
-DTSTART;TZID=Europe/Berlin:20270616T190000
-DTEND;TZID=Europe/Berlin:20270616T210000
-SUMMARY:EFA-Gruppe
-SEQUENCE:96199805
-LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
-DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
- ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
- der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
- n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
- nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
- ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813013
-URL:https://landing.churchdesk.com/de/e/48813013
-STATUS:CONFIRMED
-LAST-MODIFIED:20260513T062226Z
-CATEGORIES:Besprechung
 END:VEVENT
 BEGIN:VEVENT
 UID:48813014
