@@ -25,6 +25,50 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:46666234
+DTSTAMP:20261005T035636Z
+DTSTART;TZID=Europe/Berlin:20260809T100000
+DTEND;TZID=Europe/Berlin:20260809T123000
+SUMMARY:Gemeindefrühstück zum Ferienende
+SEQUENCE:98433877
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Mitwirkender: Kirchenvorstand Hessisch Lichtenau\n\nEreignis-UR
+ L: https://landing.churchdesk.com/de/e/46666234
+URL:https://landing.churchdesk.com/de/e/46666234
+STATUS:CONFIRMED
+LAST-MODIFIED:20260728T110107Z
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:48269819
+DTSTAMP:20261005T035636Z
+DTSTART;TZID=Europe/Berlin:20260809T140000
+DTEND;TZID=Europe/Berlin:20260809T160000
+SUMMARY:offene Stadtkirche
+SEQUENCE:96513331
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/48269819
+URL:https://landing.churchdesk.com/de/e/48269819
+STATUS:CONFIRMED
+LAST-MODIFIED:20260526T090459Z
+CATEGORIES:Andachten
+END:VEVENT
+BEGIN:VEVENT
+UID:36163919
+DTSTAMP:20261005T035636Z
+DTSTART;TZID=Europe/Berlin:20260914T090000
+DTEND;TZID=Europe/Berlin:20260914T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106267
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163919
+URL:https://landing.churchdesk.com/de/e/36163919
+STATUS:CONFIRMED
+LAST-MODIFIED:20250105T201508Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:36163920
 DTSTAMP:20261005T035636Z
 DTSTART;TZID=Europe/Berlin:20260907T090000
@@ -124,21 +168,6 @@ LAST-MODIFIED:20260107T090941Z
 CATEGORIES:Senioren
 END:VEVENT
 BEGIN:VEVENT
-UID:46666234
-DTSTAMP:20261005T035636Z
-DTSTART;TZID=Europe/Berlin:20260809T100000
-DTEND;TZID=Europe/Berlin:20260809T123000
-SUMMARY:Gemeindefrühstück zum Ferienende
-SEQUENCE:98433877
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Mitwirkender: Kirchenvorstand Hessisch Lichtenau\n\nEreignis-UR
- L: https://landing.churchdesk.com/de/e/46666234
-URL:https://landing.churchdesk.com/de/e/46666234
-STATUS:CONFIRMED
-LAST-MODIFIED:20260728T110107Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
 UID:48084233
 DTSTAMP:20261005T035636Z
 DTSTART;TZID=Europe/Berlin:20260816T193000
@@ -156,21 +185,6 @@ URL:https://landing.churchdesk.com/de/e/48084233
 STATUS:CONFIRMED
 LAST-MODIFIED:20260804T092420Z
 CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
-UID:48269819
-DTSTAMP:20261005T035636Z
-DTSTART;TZID=Europe/Berlin:20260809T140000
-DTEND;TZID=Europe/Berlin:20260809T160000
-SUMMARY:offene Stadtkirche
-SEQUENCE:96513331
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/48269819
-URL:https://landing.churchdesk.com/de/e/48269819
-STATUS:CONFIRMED
-LAST-MODIFIED:20260526T090459Z
-CATEGORIES:Andachten
 END:VEVENT
 BEGIN:VEVENT
 UID:48269821
@@ -357,20 +371,6 @@ LAST-MODIFIED:20250105T201508Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
-UID:36163919
-DTSTAMP:20261005T035636Z
-DTSTART;TZID=Europe/Berlin:20260914T090000
-DTEND;TZID=Europe/Berlin:20260914T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106267
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163919
-URL:https://landing.churchdesk.com/de/e/36163919
-STATUS:CONFIRMED
-LAST-MODIFIED:20250105T201508Z
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
 UID:44765037
 DTSTAMP:20261005T035636Z
 DTSTART;TZID=Europe/Berlin:20260930T170000
@@ -449,6 +449,26 @@ URL:https://landing.churchdesk.com/de/e/53748484
 STATUS:CONFIRMED
 LAST-MODIFIED:20260911T114602Z
 CATEGORIES:Taufen
+END:VEVENT
+BEGIN:VEVENT
+UID:53795789
+DTSTAMP:20261005T035636Z
+DTSTART;TZID=Europe/Berlin:20261021T180000
+DTEND;TZID=Europe/Berlin:20261021T200000
+SUMMARY:Gottesdienst zu Kanzler Feige in Hessisch Lichtenau mit anschließe
+ ndem Beisammensein
+SEQUENCE:100900323
+LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
+ h Lichtenau
+DESCRIPTION:Gottesdienst zum Gedenken an Johannes Kanzler Feige\n\nmit ansc
+ hließendem Beisammensein\n\n[https://edge.churchdesk.com/non/ckeditorlarg
+ e/public/o/5801/2026_kanzler-feige_plakat.jpg]© mit KI generiert\n\n\n\nM
+ itwirkender: Lektorin Sylke Goebel und Pfarrer Dominik Teminski\n\nEreigni
+ s-URL: https://landing.churchdesk.com/de/e/53795789
+URL:https://landing.churchdesk.com/de/e/53795789
+STATUS:CONFIRMED
+LAST-MODIFIED:20261001T114715Z
+CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:53951947
@@ -757,26 +777,6 @@ URL:https://landing.churchdesk.com/de/e/48813009
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062225Z
 CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
-UID:53795789
-DTSTAMP:20261005T035636Z
-DTSTART;TZID=Europe/Berlin:20261021T180000
-DTEND;TZID=Europe/Berlin:20261021T200000
-SUMMARY:Gottesdienst zu Kanzler Feige in Hessisch Lichtenau mit anschließe
- ndem Beisammensein
-SEQUENCE:100900323
-LOCATION:Stadtkirche Hessisch Lichtenau\, Landgrafenstr. 19\, 37235 Hessisc
- h Lichtenau
-DESCRIPTION:Gottesdienst zum Gedenken an Johannes Kanzler Feige\n\nmit ansc
- hließendem Beisammensein\n\n[https://edge.churchdesk.com/non/ckeditorlarg
- e/public/o/5801/2026_kanzler-feige_plakat.jpg]© mit KI generiert\n\n\n\nM
- itwirkender: Lektorin Sylke Goebel und Pfarrer Dominik Teminski\n\nEreigni
- s-URL: https://landing.churchdesk.com/de/e/53795789
-URL:https://landing.churchdesk.com/de/e/53795789
-STATUS:CONFIRMED
-LAST-MODIFIED:20261001T114715Z
-CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:36626737
@@ -1402,6 +1402,20 @@ LAST-MODIFIED:20250628T140505Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
+UID:39863492
+DTSTAMP:20261005T035636Z
+DTSTART;TZID=Europe/Berlin:20270705T090000
+DTEND;TZID=Europe/Berlin:20270705T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:87451262
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/39863492
+URL:https://landing.churchdesk.com/de/e/39863492
+STATUS:CONFIRMED
+LAST-MODIFIED:20250705T140517Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:44765044
 DTSTAMP:20261005T035636Z
 DTSTART;TZID=Europe/Berlin:20270428T170000
@@ -1544,20 +1558,6 @@ URL:https://landing.churchdesk.com/de/e/48813013
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062226Z
 CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
-UID:39863492
-DTSTAMP:20261005T035636Z
-DTSTART;TZID=Europe/Berlin:20270705T090000
-DTEND;TZID=Europe/Berlin:20270705T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:87451262
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/39863492
-URL:https://landing.churchdesk.com/de/e/39863492
-STATUS:CONFIRMED
-LAST-MODIFIED:20250705T140517Z
-CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
 UID:40070426
