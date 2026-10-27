@@ -24,19 +24,21 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:44765034
+UID:54070876
 DTSTAMP:20261026T105521Z
-DTSTART;TZID=Europe/Berlin:20260826T170000
-DTEND;TZID=Europe/Berlin:20260826T190000
-SUMMARY:Spiele-Abend
-SEQUENCE:92360156
-LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
- u
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765034
-URL:https://landing.churchdesk.com/de/e/44765034
+DTSTART;TZID=Europe/Berlin:20260830T110000
+DTEND;TZID=Europe/Berlin:20260830T120000
+SUMMARY:Tauffest am Laudenbach in Retterode
+SEQUENCE:98600919
+LOCATION:im Freien\, Zum Daubenstock\, 37235 Hessisch Lichtenau
+DESCRIPTION:[https://edge.churchdesk.com/non/ckeditorlarge/public/o/5801/fl
+ yer.tauffest.jpg]© Dominik Teminski\n\n\n\nMitwirkender: Pfarrerin Anja P
+ eters\, Pfarrer Dominik Teminski & Laudenbach-Trio\n\nEreignis-URL: https:
+ //landing.churchdesk.com/de/e/54070876
+URL:https://landing.churchdesk.com/de/e/54070876
 STATUS:CONFIRMED
-LAST-MODIFIED:20260107T090516Z
-CATEGORIES:Geselligkeit
+LAST-MODIFIED:20260804T094215Z
+CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:36163916
@@ -204,23 +206,6 @@ LAST-MODIFIED:20260911T114602Z
 CATEGORIES:Taufen
 END:VEVENT
 BEGIN:VEVENT
-UID:54070876
-DTSTAMP:20261026T105521Z
-DTSTART;TZID=Europe/Berlin:20260830T110000
-DTEND;TZID=Europe/Berlin:20260830T120000
-SUMMARY:Tauffest am Laudenbach in Retterode
-SEQUENCE:98600919
-LOCATION:im Freien\, Zum Daubenstock\, 37235 Hessisch Lichtenau
-DESCRIPTION:[https://edge.churchdesk.com/non/ckeditorlarge/public/o/5801/fl
- yer.tauffest.jpg]© Dominik Teminski\n\n\n\nMitwirkender: Pfarrerin Anja P
- eters\, Pfarrer Dominik Teminski & Laudenbach-Trio\n\nEreignis-URL: https:
- //landing.churchdesk.com/de/e/54070876
-URL:https://landing.churchdesk.com/de/e/54070876
-STATUS:CONFIRMED
-LAST-MODIFIED:20260804T094215Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
 UID:58241768
 DTSTAMP:20261026T105521Z
 DTSTART;TZID=Europe/Berlin:20260913T103000
@@ -251,6 +236,21 @@ DESCRIPTION:Mitwirkender: Pfarrer Dominik Teminski\, Frauengruppe EFA\, Arc
 URL:https://landing.churchdesk.com/de/e/61655344
 STATUS:CONFIRMED
 LAST-MODIFIED:20261001T102041Z
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:61655422
+DTSTAMP:20261026T105521Z
+DTSTART;TZID=Europe/Berlin:20261004T103000
+DTEND;TZID=Europe/Berlin:20261004T113000
+SUMMARY:Erntedank-Gottesdienst in Retterode mit Abendmahl
+SEQUENCE:100891824
+LOCATION:Retterode\, Hambergstr. 8\, 37235 Hessisch Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
+ nding.churchdesk.com/de/e/61655422
+URL:https://landing.churchdesk.com/de/e/61655422
+STATUS:CONFIRMED
+LAST-MODIFIED:20261001T102011Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
@@ -435,21 +435,6 @@ DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
 URL:https://landing.churchdesk.com/de/e/54116220
 STATUS:CONFIRMED
 LAST-MODIFIED:20261009T070348Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
-UID:61655422
-DTSTAMP:20261026T105521Z
-DTSTART;TZID=Europe/Berlin:20261004T103000
-DTEND;TZID=Europe/Berlin:20261004T113000
-SUMMARY:Erntedank-Gottesdienst in Retterode mit Abendmahl
-SEQUENCE:100891824
-LOCATION:Retterode\, Hambergstr. 8\, 37235 Hessisch Lichtenau
-DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\n\nEreignis-URL: https://la
- nding.churchdesk.com/de/e/61655422
-URL:https://landing.churchdesk.com/de/e/61655422
-STATUS:CONFIRMED
-LAST-MODIFIED:20261001T102011Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
@@ -894,6 +879,21 @@ LAST-MODIFIED:20250215T150318Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
+UID:37888321
+DTSTAMP:20261026T105521Z
+DTSTART;TZID=Europe/Berlin:20270222T090000
+DTEND;TZID=Europe/Berlin:20270222T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:84523481
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37888321
+URL:https://landing.churchdesk.com/de/e/37888321
+STATUS:CONFIRMED
+LAST-MODIFIED:20250222T150329Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:44765041
 DTSTAMP:20261026T105521Z
 DTSTART;TZID=Europe/Berlin:20261230T170000
@@ -988,21 +988,6 @@ URL:https://landing.churchdesk.com/de/e/48813008
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062225Z
 CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
-UID:37888321
-DTSTAMP:20261026T105521Z
-DTSTART;TZID=Europe/Berlin:20270222T090000
-DTEND;TZID=Europe/Berlin:20270222T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:84523481
-LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
- u
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/37888321
-URL:https://landing.churchdesk.com/de/e/37888321
-STATUS:CONFIRMED
-LAST-MODIFIED:20250222T150329Z
-CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
 UID:38039731
@@ -1740,6 +1725,20 @@ LAST-MODIFIED:20251018T140542Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
+UID:42290846
+DTSTAMP:20261026T105521Z
+DTSTART;TZID=Europe/Berlin:20271025T090000
+DTEND;TZID=Europe/Berlin:20271025T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:90099902
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/42290846
+URL:https://landing.churchdesk.com/de/e/42290846
+STATUS:CONFIRMED
+LAST-MODIFIED:20251025T140518Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:44765048
 DTSTAMP:20261026T105521Z
 DTSTART;TZID=Europe/Berlin:20270825T170000
@@ -1869,17 +1868,18 @@ LAST-MODIFIED:20260513T062226Z
 CATEGORIES:Besprechung
 END:VEVENT
 BEGIN:VEVENT
-UID:42290846
+UID:44765052
 DTSTAMP:20261026T105521Z
-DTSTART;TZID=Europe/Berlin:20271025T090000
-DTEND;TZID=Europe/Berlin:20271025T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:90099902
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/42290846
-URL:https://landing.churchdesk.com/de/e/42290846
+DTSTART;TZID=Europe/Berlin:20271027T170000
+DTEND;TZID=Europe/Berlin:20271027T190000
+SUMMARY:Spiele-Abend
+SEQUENCE:92360174
+LOCATION:Gemeindehaus\, Mühlweg 21\, Mühlweg 21\, 37235 Hessisch Lichtena
+ u
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/44765052
+URL:https://landing.churchdesk.com/de/e/44765052
 STATUS:CONFIRMED
-LAST-MODIFIED:20251025T140518Z
-CATEGORIES:Kinder & Familien
+LAST-MODIFIED:20260107T090518Z
+CATEGORIES:Geselligkeit
 END:VEVENT
 END:VCALENDAR
