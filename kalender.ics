@@ -24,6 +24,20 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:36163919
+DTSTAMP:20261112T070107Z
+DTSTART;TZID=Europe/Berlin:20260914T090000
+DTEND;TZID=Europe/Berlin:20260914T100000
+SUMMARY:Krabbelgruppe
+SEQUENCE:83106267
+LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
+DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163919
+URL:https://landing.churchdesk.com/de/e/36163919
+STATUS:CONFIRMED
+LAST-MODIFIED:20250105T201508Z
+CATEGORIES:Kinder & Familien
+END:VEVENT
+BEGIN:VEVENT
 UID:58241768
 DTSTAMP:20261112T070107Z
 DTSTART;TZID=Europe/Berlin:20260913T103000
@@ -111,20 +125,6 @@ LAST-MODIFIED:20250105T201508Z
 CATEGORIES:Kinder & Familien
 END:VEVENT
 BEGIN:VEVENT
-UID:36163919
-DTSTAMP:20261112T070107Z
-DTSTART;TZID=Europe/Berlin:20260914T090000
-DTEND;TZID=Europe/Berlin:20260914T100000
-SUMMARY:Krabbelgruppe
-SEQUENCE:83106267
-LOCATION:Gemeindehaus\, Mühlweg 21\, 37235 Hessisch Lichtenau
-DESCRIPTION:Ereignis-URL: https://landing.churchdesk.com/de/e/36163919
-URL:https://landing.churchdesk.com/de/e/36163919
-STATUS:CONFIRMED
-LAST-MODIFIED:20250105T201508Z
-CATEGORIES:Kinder & Familien
-END:VEVENT
-BEGIN:VEVENT
 UID:44765037
 DTSTAMP:20261112T070107Z
 DTSTART;TZID=Europe/Berlin:20260930T170000
@@ -184,6 +184,25 @@ DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
  nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
  ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813001
 URL:https://landing.churchdesk.com/de/e/48813001
+STATUS:CONFIRMED
+LAST-MODIFIED:20260513T062225Z
+CATEGORIES:Besprechung
+END:VEVENT
+BEGIN:VEVENT
+UID:48813005
+DTSTAMP:20261112T070107Z
+DTSTART;TZID=Europe/Berlin:20261021T190000
+DTEND;TZID=Europe/Berlin:20261021T210000
+SUMMARY:EFA-Gruppe
+SEQUENCE:96199796
+LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
+DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
+ ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
+ der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
+ n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
+ nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
+ ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813005
+URL:https://landing.churchdesk.com/de/e/48813005
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062225Z
 CATEGORIES:Besprechung
@@ -452,25 +471,6 @@ LAST-MODIFIED:20260107T090941Z
 CATEGORIES:Senioren
 END:VEVENT
 BEGIN:VEVENT
-UID:48813005
-DTSTAMP:20261112T070107Z
-DTSTART;TZID=Europe/Berlin:20261021T190000
-DTEND;TZID=Europe/Berlin:20261021T210000
-SUMMARY:EFA-Gruppe
-SEQUENCE:96199796
-LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
-DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
- ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
- der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
- n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
- nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
- ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813005
-URL:https://landing.churchdesk.com/de/e/48813005
-STATUS:CONFIRMED
-LAST-MODIFIED:20260513T062225Z
-CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
 UID:48813009
 DTSTAMP:20261112T070107Z
 DTSTART;TZID=Europe/Berlin:20261118T190000
@@ -585,6 +585,22 @@ DESCRIPTION:Mit dir beginnt Neues. Bitte wenden!\n\n[https://edge.churchdes
 URL:https://landing.churchdesk.com/de/e/67676045
 STATUS:CONFIRMED
 LAST-MODIFIED:20261102T121302Z
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
+UID:67677817
+DTSTAMP:20261112T070107Z
+DTSTART;TZID=Europe/Berlin:20261122T093000
+DTEND;TZID=Europe/Berlin:20261122T103000
+SUMMARY:Gottesdienst in Friedrichsbrück
+SEQUENCE:102418708
+LOCATION:Kirche Friedrichsbrück\, Wiesentalstr. 2\, 37235 Hessisch Lichten
+ au
+DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\; mit Gedenken der Verstorb
+ enen\n\nEreignis-URL: https://landing.churchdesk.com/de/e/67677817
+URL:https://landing.churchdesk.com/de/e/67677817
+STATUS:CONFIRMED
+LAST-MODIFIED:20261102T113600Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
@@ -720,22 +736,6 @@ DESCRIPTION:Mitwirkender: Lektor Berndt Baum\; mit Gedenken der Verstorbene
 URL:https://landing.churchdesk.com/de/e/67677414
 STATUS:CONFIRMED
 LAST-MODIFIED:20261102T113458Z
-CATEGORIES:Gottesdienst
-END:VEVENT
-BEGIN:VEVENT
-UID:67677817
-DTSTAMP:20261112T070107Z
-DTSTART;TZID=Europe/Berlin:20261122T093000
-DTEND;TZID=Europe/Berlin:20261122T103000
-SUMMARY:Gottesdienst in Friedrichsbrück
-SEQUENCE:102418708
-LOCATION:Kirche Friedrichsbrück\, Wiesentalstr. 2\, 37235 Hessisch Lichten
- au
-DESCRIPTION:Mitwirkender: Pfarrerin Anja Peters\; mit Gedenken der Verstorb
- enen\n\nEreignis-URL: https://landing.churchdesk.com/de/e/67677817
-URL:https://landing.churchdesk.com/de/e/67677817
-STATUS:CONFIRMED
-LAST-MODIFIED:20261102T113600Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
