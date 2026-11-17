@@ -24,25 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:48813001
-DTSTAMP:20261116T055746Z
-DTSTART;TZID=Europe/Berlin:20260916T190000
-DTEND;TZID=Europe/Berlin:20260916T210000
-SUMMARY:EFA-Gruppe
-SEQUENCE:96199795
-LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
-DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
- ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
- der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
- n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
- nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
- ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813001
-URL:https://landing.churchdesk.com/de/e/48813001
-STATUS:CONFIRMED
-LAST-MODIFIED:20260513T062225Z
-CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
 UID:36163914
 DTSTAMP:20261116T055746Z
 DTSTART;TZID=Europe/Berlin:20261019T090000
@@ -634,6 +615,21 @@ LAST-MODIFIED:20261102T113853Z
 CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
+UID:67678563
+DTSTAMP:20261116T055746Z
+DTSTART;TZID=Europe/Berlin:20261122T111500
+DTEND;TZID=Europe/Berlin:20261122T121500
+SUMMARY:Gottesdienst in Quentel
+SEQUENCE:102419825
+LOCATION:Kirche Fürstenhagen\, An der Kirche 1\, 37235 Hessisch Lichtenau
+DESCRIPTION:Mitwirkender: Pfarrer Marcus Meier\; mit Gedenken der Verstorbe
+ nen\n\nEreignis-URL: https://landing.churchdesk.com/de/e/67678563
+URL:https://landing.churchdesk.com/de/e/67678563
+STATUS:CONFIRMED
+LAST-MODIFIED:20261102T114456Z
+CATEGORIES:Gottesdienst
+END:VEVENT
+BEGIN:VEVENT
 UID:36437690
 DTSTAMP:20261116T055746Z
 DTSTART;TZID=Europe/Berlin:20261123T090000
@@ -736,21 +732,6 @@ URL:https://landing.churchdesk.com/de/e/48813006
 STATUS:CONFIRMED
 LAST-MODIFIED:20260513T062225Z
 CATEGORIES:Besprechung
-END:VEVENT
-BEGIN:VEVENT
-UID:67678563
-DTSTAMP:20261116T055746Z
-DTSTART;TZID=Europe/Berlin:20261122T111500
-DTEND;TZID=Europe/Berlin:20261122T121500
-SUMMARY:Gottesdienst in Quentel
-SEQUENCE:102419825
-LOCATION:Kirche Fürstenhagen\, An der Kirche 1\, 37235 Hessisch Lichtenau
-DESCRIPTION:Mitwirkender: Pfarrer Marcus Meier\; mit Gedenken der Verstorbe
- nen\n\nEreignis-URL: https://landing.churchdesk.com/de/e/67678563
-URL:https://landing.churchdesk.com/de/e/67678563
-STATUS:CONFIRMED
-LAST-MODIFIED:20261102T114456Z
-CATEGORIES:Gottesdienst
 END:VEVENT
 BEGIN:VEVENT
 UID:36805052
@@ -1915,5 +1896,24 @@ URL:https://landing.churchdesk.com/de/e/44765880
 STATUS:CONFIRMED
 LAST-MODIFIED:20260107T090943Z
 CATEGORIES:Senioren
+END:VEVENT
+BEGIN:VEVENT
+UID:48813017
+DTSTAMP:20261116T055746Z
+DTSTART;TZID=Europe/Berlin:20271117T190000
+DTEND;TZID=Europe/Berlin:20271117T210000
+SUMMARY:EFA-Gruppe
+SEQUENCE:96199809
+LOCATION:Kataharinenhaus\, Kirchstraße 18\, 37235 Hessisch Lichtenau
+DESCRIPTION:Die Frauengruppe Evangelischer Frauen Abend trifft sich am 3. M
+ ittwoch eines Monats um 19 Uhr im Katharinenhaus (Kirchstraße 18\, neben 
+ der Stadtkirche Hessisch Lichtenau). Interessierte sind herzlich willkomme
+ n!\n\nKontakt: Angelika Hinkel\, Roswitha Hnida\, Telefon 05602-4475.\n\nU
+ nd sie organisiert den Spiele-Abend &hellip\;\n\n\n\nMitwirkender: EFA-Gru
+ ppe\n\nEreignis-URL: https://landing.churchdesk.com/de/e/48813017
+URL:https://landing.churchdesk.com/de/e/48813017
+STATUS:CONFIRMED
+LAST-MODIFIED:20260513T062226Z
+CATEGORIES:Besprechung
 END:VEVENT
 END:VCALENDAR
